@@ -18,4 +18,6 @@ class test:
         self.a =5
         self.b = 6
 t1 = test()
+t2 = test()
 print(t1.a,t1.b)
+print(t1.a+t2.b)
