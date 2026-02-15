@@ -1,6 +1,14 @@
 class operators:
     def sum(self,a,b):
-        sum  = a+b
-        return sum
+        return a+b
+    def subs(self,a,b):
+        return a-b
+    def multiple(self,a,b):
+        return a*b
+    def div(self,a,b):
+        return a/b
 op =operators()
-print(op.sum(4,5))
+print('Sum',op.sum(4,5))
+print('Substract',op.subs(4,5))
+print('mulriple',op.multiple(4,5))
+print('divison',op.div(4,5))
