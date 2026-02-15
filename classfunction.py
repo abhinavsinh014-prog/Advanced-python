@@ -14,10 +14,10 @@ print('mulriple',op.multiple(4,5))
 print('divison',op.div(4,5))
 
 class test:
-    def __init__(self):
-        self.a =5
-        self.b = 6
-t1 = test()
-t2 = test()
-print(t1.a,t1.b)
-print(t1.a+t2.b)
+    def __init__(self,a,b):
+        self.a = a
+        self.b = b
+t1 = test(4,9)
+t2 = test(5,3)
+print(t1.a*t1.b)
+print(t2.a+t2.b)
