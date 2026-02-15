@@ -12,3 +12,10 @@ print('Sum',op.sum(4,5))
 print('Substract',op.subs(4,5))
 print('mulriple',op.multiple(4,5))
 print('divison',op.div(4,5))
+
+class test:
+    def __init__(self):
+        self.a =5
+        self.b = 6
+t1 = test()
+print(t1.a,t1.b)
