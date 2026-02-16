@@ -47,3 +47,8 @@ class employee:
         self.salary = salary
     def fulldetail(self,name,enrid,salary):
         print("{enrid}. {name},{salary}")
+e1 = employee('oggy',6,156)
+e2 = employee()
+e2.setname('jack')
+e2.setenrid(5)
+e2.setsalary(158)
