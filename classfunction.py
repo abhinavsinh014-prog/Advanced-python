@@ -45,10 +45,11 @@ class employee:
         self.enrid = enrid
     def setsalary(self,salary):
         self.salary = salary
-    def fulldetail(self,name,enrid,salary):
-        print("{enrid}. {name},{salary}")
+    def fulldetail(self):
+        return ("{enrid}. {name},{salary}")
 e1 = employee('oggy',6,156)
 e2 = employee()
-e2.setname('jack')
-e2.setenrid(5)
-e2.setsalary(158)
+print(e2.setname('jack'))
+print(e2.setenrid(5))
+print(e2.setsalary(158))
+print(e2.fulldetail)
