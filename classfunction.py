@@ -14,10 +14,22 @@ print('mulriple',op.multiple(4,5))
 print('divison',op.div(4,5))
 
 class test:
+    x = 5
     def __init__(self,a,b):
         self.a = a
         self.b = b
+    def show(self):
+        print(self.a,self.b)
+    @staticmethod
+    def static():
+        print('hello')
+    @classmethod
+    def classes(cls):
+        print(cls.x)
 t1 = test(4,9)
 t2 = test(5,3)
-print(t1.a*t1.b)
-print(t2.a+t2.b)
+t1.show()
+test.static()
+test.classes()
+# print(t1.a*t1.b)
+# print(t2.a+t2.b)
