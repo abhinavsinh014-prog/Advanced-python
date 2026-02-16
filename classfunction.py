@@ -35,21 +35,29 @@
 # # print(t2.a+t2.b)
 
 class employee:
-    def __init__(self,name=None,enrid=None,salary=None):
+
+    def __init__(self, name=None, enrid=None, salary=None):
         self.name = name
         self.enrid = enrid
         self.salary = salary
-    def setname(self,name):
+
+    def setname(self, name):
         self.name = name
-    def setenrid(self,enrid):
+
+    def setenrid(self, enrid):
         self.enrid = enrid
-    def setsalary(self,salary):
+
+    def setsalary(self, salary):
         self.salary = salary
+
     def fulldetail(self):
-        return ("{enrid}. {name},{salary}")
-e1 = employee('oggy',6,156)
+        return f"{self.enrid}. {self.name} have the salary of {self.salary}"
+
+
 e2 = employee()
-print(e2.setname('jack'))
-print(e2.setenrid(5))
-print(e2.setsalary(158))
-print(e2.fulldetail)
+e1 = employee('oggy',6,150)
+e2.setname('jack')
+e2.setenrid(5)
+e2.setsalary(158)
+print(e1.fulldetail())
+print(e2.fulldetail())
