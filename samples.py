@@ -7,7 +7,7 @@ class account:
 
     @classmethod
     def std_balance(cls,deposit):
-        print(cls-int(deposit))
+        print('remaining balance is ',cls.total - deposit)
 r1 = account('suraj',456,5500)
 print(r1.std_balance(5500))
         
