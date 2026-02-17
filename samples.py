@@ -8,7 +8,7 @@ class account:
         print(f"student name :-{self.name} \nstudent id :-{self.id}")
     @classmethod
     def std_balance(cls,deposit):
-        print('remaining balance is ',cls.total - deposit)
+        print(f"remaining balance is {cls.total - deposit}")
 r1 = account('suraj',456,5500)
 print(r1.std_name('suraj',456))
 print(r1.std_balance(5500))
