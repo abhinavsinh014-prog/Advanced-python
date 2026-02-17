@@ -4,10 +4,12 @@ class account:
         self.name = name
         self.id = id
         self.deposit = deposit
-
+    def std_name(self,name,id):
+        print(f"student name :-{self.name} \nstudent id :-{self.id}")
     @classmethod
     def std_balance(cls,deposit):
         print('remaining balance is ',cls.total - deposit)
 r1 = account('suraj',456,5500)
+print(r1.std_name('suraj',456))
 print(r1.std_balance(5500))
         
