@@ -50,14 +50,27 @@ class employee:
     def setsalary(self, salary):
         self.salary = salary
 
+    def getname(self):
+        return self.name
+    
+    def getenrid(self):
+        return self.enrid
+    
+    def getsalary(self):
+        return self.salary
+    
     def fulldetail(self):
         return f"{self.enrid}. {self.name} have the salary of {self.salary}"
 
 
 e2 = employee()
+
 e1 = employee('oggy',6,150)
+
 e2.setname('jack')
 e2.setenrid(5)
 e2.setsalary(158)
+
+print(e1.getsalary())
 print(e1.fulldetail())
 print(e2.fulldetail())
