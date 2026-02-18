@@ -261,6 +261,7 @@
 
 ### Matrix zeroes
 matrix = [[1,1,1],[1,0,1],[1,1,1]]
+print('before',matrix)
 find = False
 for i in range(0,len(matrix)-1):
     if matrix[i][0] == 0:
@@ -280,4 +281,4 @@ if find:
     for i in range(1,len(matrix)):
       matrix[i][0]=0
 
-print(matrix)
+print('aftr',matrix)
