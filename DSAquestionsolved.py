@@ -235,26 +235,34 @@
 #     print('-1') 
 # print(count)
 
-arr = [12,3,25,12,35,65,85,98]
-k =52
-prefix_sum = 0
-max_len = 0
-hashmap = {}
+# arr = [12,3,25,12,35,65,85,98]
+# k =52
+# prefix_sum = 0
+# max_len = 0
+# hashmap = {}
 
-for i in range(len(arr)):
-    prefix_sum += arr[i]
+# for i in range(len(arr)):
+#     prefix_sum += arr[i]
 
-            # Case 1: If prefix_sum itself equals k
-    if prefix_sum == k:
-        max_len = i + 1
+#             # Case 1: If prefix_sum itself equals k
+#     if prefix_sum == k:
+#         max_len = i + 1
 
-            # Case 2: If (prefix_sum - k) seen before
-    if (prefix_sum - k) in hashmap:
-        length = i - hashmap[prefix_sum - k]
-        max_len = max(max_len, length)
+#             # Case 2: If (prefix_sum - k) seen before
+#     if (prefix_sum - k) in hashmap:
+#         length = i - hashmap[prefix_sum - k]
+#         max_len = max(max_len, length)
 
-            # Store prefix_sum only if not already present
-    if prefix_sum not in hashmap:
-        hashmap[prefix_sum] = i
+#             # Store prefix_sum only if not already present
+#     if prefix_sum not in hashmap:
+#         hashmap[prefix_sum] = i
 
-print(max_len)
+# print(max_len)
+
+### Matrix zeroes
+matrix = [[1,1,1],[1,0,1],[1,1,1]]
+
+for i in range(0,len(matrix)):
+    for j in range(0,len(matrix)):
+        if matrix[j]==0:
+            print(matrix[i][j])
