@@ -261,8 +261,10 @@
 
 ### Matrix zeroes
 matrix = [[1,1,1],[1,0,1],[1,1,1]]
-
+find = False
 for i in range(0,len(matrix)-1):
+    if matrix[i][0] == 0:
+     find = True
     for j in range(0,len(matrix)-1):
         if matrix[i][j]==0:
             matrix[i][0]=0
@@ -270,4 +272,12 @@ for i in range(0,len(matrix)-1):
 for i in range(1,len(matrix)):
     for j in range(1,len(matrix)):
         if matrix[i][0] or matrix[0][j]:
-            matrix[i][j]
+            matrix[i][j]= 0
+if matrix[0][0]==0:
+    for j in range(1,len(matrix[0])):
+      matrix[0][j]=0
+if find:
+    for i in range(1,len(matrix)):
+      matrix[i][0]=0
+
+print(matrix)
