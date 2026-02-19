@@ -283,20 +283,45 @@
 
 # print('aftr',matrix)
 
-l1= [2,4,3]
-l2 = [5,6,4]
+# l1= [2,4,3]
+# l2 = [5,6,4]
 
-row1 = len(l1)
-carry = 0
+# row1 = len(l1)
+# carry = 0
 
-sum_row = []
-for i in range(0,row1):
-    sum = l1[i] + l2[i] + carry
-    carry = sum//10
-    digit = sum%10
+# sum_row = []
+# for i in range(0,row1):
+#     sum = l1[i] + l2[i] + carry
+#     carry = sum//10
+#     digit = sum%10
 
-    sum_row.append(digit)
+#     sum_row.append(digit)
 
-if carry:
-    sum_row.append(carry)
-print(sum_row)
+# if carry:
+#     sum_row.append(carry)
+# print(sum_row)
+
+class Solution:
+    def addTwoNumbers(self, l1, l2):
+        
+        dummy = ListNode(0)
+        current = dummy
+        carry = 0
+        
+        while l1 or l2 or carry:
+            
+            val1 = l1.val if l1 else 0
+            val2 = l2.val if l2 else 0
+            
+            total = val1 + val2 + carry
+            carry = total // 10
+            
+            current.next = ListNode(total % 10)
+            current = current.next
+            
+            if l1:
+                l1 = l1.next
+            if l2:
+                l2 = l2.next
+                
+        return dummy.next
