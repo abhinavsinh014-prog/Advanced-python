@@ -300,6 +300,10 @@
 # if carry:
 #     sum_row.append(carry)
 # print(sum_row)
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 
 class Solution:
     def addTwoNumbers(self, l1, l2):
@@ -325,3 +329,5 @@ class Solution:
                 l2 = l2.next
                 
         return dummy.next
+on = Solution()
+print(on.addTwoNumbers([1,5,6],[5,6,2]))
