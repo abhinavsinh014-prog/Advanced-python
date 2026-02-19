@@ -283,12 +283,20 @@
 
 # print('aftr',matrix)
 
-l1= [2,3,5]
-l2 = [4,3,2]
+l1= [2,4,3]
+l2 = [5,6,4]
 
 row1 = len(l1)
+carry = 0
 
 sum_row = []
 for i in range(0,row1):
-    sum = l1[i] + l2[i]
-    sum_row.append(sum)
+    sum = l1[i] + l2[i] + carry
+    carry = sum//10
+    digit = sum%10
+
+    sum_row.append(digit)
+
+if carry:
+    sum_row.append(carry)
+print(sum_row)
