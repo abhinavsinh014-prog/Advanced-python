@@ -260,25 +260,35 @@
 # print(max_len)
 
 ### Matrix zeroes
-matrix = [[1,1,1],[1,0,1],[1,1,1]]
-print('before',matrix)
-find = False
-for i in range(len(matrix)):
-    if matrix[i][0] == 0:
-     find = True
-    for j in range(len(matrix[0])):
-        if matrix[i][j]==0:
-            matrix[i][0]=0
-            matrix[0][j]=0
-for i in range(1,len(matrix)):
-    for j in range(1,len(matrix[0])):
-        if matrix[i][0]==0 or matrix[0][j]==0:
-            matrix[i][j]= 0
-if matrix[0][0]==0:
-    for j in range(1,len(matrix[0])):
-      matrix[0][j]=0
-if find:
-    for i in range(1,len(matrix)):
-      matrix[i][0]=0
+# matrix = [[1,1,1],[1,0,1],[1,1,1]]
+# print('before',matrix)
+# find = False
+# for i in range(len(matrix)):
+#     if matrix[i][0] == 0:
+#      find = True
+#     for j in range(len(matrix[0])):
+#         if matrix[i][j]==0:
+#             matrix[i][0]=0
+#             matrix[0][j]=0
+# for i in range(1,len(matrix)):
+#     for j in range(1,len(matrix[0])):
+#         if matrix[i][0]==0 or matrix[0][j]==0:
+#             matrix[i][j]= 0
+# if matrix[0][0]==0:
+#     for j in range(1,len(matrix[0])):
+#       matrix[0][j]=0
+# if find:
+#     for i in range(1,len(matrix)):
+#       matrix[i][0]=0
 
-print('aftr',matrix)
+# print('aftr',matrix)
+
+l1= [2,3,5]
+l2 = [4,3,2]
+
+row1 = len(l1)
+
+sum_row = []
+for i in range(0,row1):
+    sum = l1[i] + l2[i]
+    sum_row.append(sum)
