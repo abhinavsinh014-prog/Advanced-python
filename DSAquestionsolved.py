@@ -300,40 +300,58 @@
 # if carry:
 #     sum_row.append(carry)
 # print(sum_row)
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
-
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
 
 
-class Solution:
-    def addTwoNumbers(self, l1, l2):
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
 
-        dummy = ListNode(0)
-        current = dummy
-        carry = 0
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
 
-        while l1 or l2 or carry:
 
-            val1 = l1.val if l1 else 0
-            val2 = l2.val if l2 else 0
+# class Solution:
+#     def addTwoNumbers(self, l1, l2):
 
-            total = val1 + val2 + carry
-            carry = total // 10
+#         dummy = ListNode(0)
+#         current = dummy
+#         carry = 0
 
-            current.next = ListNode(total % 10)
-            current = current.next
+#         while l1 or l2 or carry:
 
-            if l1:
-                l1 = l1.next
-            if l2:
-                l2 = l2.next
+#             val1 = l1.val if l1 else 0
+#             val2 = l2.val if l2 else 0
 
-        return dummy
-on = Solution()
-print(on.addTwoNumbers([1,5,6],[5,7,1]))
+#             total = val1 + val2 + carry
+#             carry = total // 10
+
+#             current.next = ListNode(total % 10)
+#             current = current.next
+
+#             if l1:
+#                 l1 = l1.next
+#             if l2:
+#                 l2 = l2.next
+
+#         return dummy
+# on = Solution()
+# print(on.addTwoNumbers([1,5,6],[5,7,1]))
+
+class Module:
+    def maxheight(self,arr,k):
+
+        sum_arr = sum(arr)
+        average_arr = sum_arr/(len(arr)+1)
+        new_arr = []
+        for i in arr:
+            if i >= average_arr:
+                new = i - k
+                new_arr.append(new)
+            else:
+                new = i + k
+                new_arr.append(new)    
+mop = Module()
+print(mop.maxheight([5,6,9,14,20],3))
