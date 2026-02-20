@@ -352,6 +352,12 @@ class Module:
                 new_arr.append(new)
             else:
                 new = i + k
-                new_arr.append(new)    
+                new_arr.append(new)  
+        
+        maxi,mini= max(new_arr),min(new_arr)
+
+        return maxi - mini  
+
+
 mop = Module()
-print(mop.maxheight([5,6,9,14,20],3))
+print(mop.maxheight([3,9,12,16,20],3))
