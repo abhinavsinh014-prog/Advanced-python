@@ -377,7 +377,7 @@ class Module:
             mini = min(small,arr[0]+k)
 
         ans = min(maxi-mini,ans)
-
+        return ans
 mop = Module()
 print(mop.maxheight([3,9,12,16,20],3))
 
