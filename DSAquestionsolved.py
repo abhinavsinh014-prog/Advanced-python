@@ -343,21 +343,42 @@
 class Module:
     def maxheight(self,arr,k):
 
-        sum_arr = sum(arr)
-        average_arr = sum_arr/(len(arr)+1)
-        new_arr = []
-        for i in arr:
-            if i >= average_arr:
-                new = i - k
-                new_arr.append(new)
-            else:
-                new = i + k
-                new_arr.append(new)  
+#         sum_arr = sum(arr)
+#         average_arr = sum_arr/(len(arr)+1)
+#         new_arr = []
+#         for i in arr:
+#             if i >= average_arr:
+#                 new = i - k
+#                 new_arr.append(new)
+#             else:
+#                 new = i + k
+#                 new_arr.append(new)  
         
-        maxi,mini= max(new_arr),min(new_arr)
+#         maxi,mini= max(new_arr),min(new_arr)
 
-        return maxi - mini  
+#         return maxi - mini  
 
+
+        n = len(arr)
+
+        if n == 1:
+            return 0
+        
+        ans = arr[n-1] - arr[0]
+
+        small = arr[0] + k
+        big = arr[n-1] - k
+
+        if small > big :
+            small ,big = big , small
+
+        for i in range(1,n):
+            maxi = max(big,arr[n-1]-k)
+            mini = min(small,arr[0]+k)
+
+        ans = min(maxi-mini,ans)
 
 mop = Module()
 print(mop.maxheight([3,9,12,16,20],3))
+
+
