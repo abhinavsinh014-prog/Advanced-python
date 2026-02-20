@@ -364,6 +364,7 @@ class Module:
         if n == 1:
             return 0
         
+        arr.sort()
         ans = arr[n-1] - arr[0]
 
         small = arr[0] + k
