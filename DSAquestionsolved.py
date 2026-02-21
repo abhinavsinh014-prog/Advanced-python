@@ -340,8 +340,8 @@
 # on = Solution()
 # print(on.addTwoNumbers([1,5,6],[5,7,1]))
 
-class Module:
-    def maxheight(self,arr,k):
+# class Module:
+#     def maxheight(self,arr,k):
 
 #         sum_arr = sum(arr)
 #         average_arr = sum_arr/(len(arr)+1)
@@ -359,27 +359,6 @@ class Module:
 #         return maxi - mini  
 
 
-        n = len(arr)
-
-        if n == 1:
-            return 0
-        
-        arr.sort()
-        ans = arr[n-1] - arr[0]
-
-        small = arr[0] + k
-        big = arr[n-1] - k
-
-        if small > big :
-            small ,big = big , small
-
-        for i in range(1,n):
-            maxi = max(big,arr[n-1]-k)
-            mini = min(small,arr[0]+k)
-
-        ans = min(maxi-mini,ans)
-        return ans
-mop = Module()
-print(mop.maxheight([3,9,12,16,20],3))
-
-
+class solution:
+    def inversion(self,arr):
+        return 
