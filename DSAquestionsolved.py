@@ -362,12 +362,13 @@
 class solution:
     def inversion(self,arr):
         n = len(arr)
+        count = 0
 
         for i in range(0,n):
             for j in range(i+1,n):
                  if arr[i]>arr[j]:
-                      ans = (arr[i],arr[j])
-                      print(ans,end=" ")
+                      count += 1
+        return count
     
 obj = solution()
 print(obj.inversion([2, 4, 1, 3, 5]))
