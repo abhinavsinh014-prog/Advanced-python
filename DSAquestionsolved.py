@@ -373,11 +373,22 @@
 # obj = solution()
 # print(obj.inversion([2, 4, 1, 3, 5]))
 
-class solution:
-    def inversion(self,arr,k):
-        arr.sort()
-        m = k-1
-        return arr[m]
+# class solution:
+#     def kthnumber(self,arr,k):
+#         arr.sort()
+#         m = k-1
+#         return arr[m]
     
+# obj = solution()
+# print(obj.kthnumber([2, 4, 1, 3, 5],3))
+
+
+class solution:
+    def binary(self,arr,k):
+        m = len(arr)
+        for i in range(0,m):
+            if arr[i]==k:
+                print(i)
+        return i 
 obj = solution()
-print(obj.inversion([2, 4, 1, 3, 5],3))
+print(obj.binary([2, 4, 1, 3, 5],3))
