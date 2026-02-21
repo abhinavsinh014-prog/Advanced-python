@@ -361,4 +361,10 @@
 
 class solution:
     def inversion(self,arr):
-        return 
+        n = len(arr)
+
+        for i in range(0,n):
+            for j in range(i+1,n):
+                if arr[i]>arr[j]:
+                    return (arr[i],arr[j])
+        return (arr[i],arr[j])
