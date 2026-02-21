@@ -359,16 +359,25 @@
 #         return maxi - mini  
 
 
-class solution:
-    def inversion(self,arr):
-        n = len(arr)
-        count = 0
+# class solution:
+#     def inversion(self,arr):
+#         n = len(arr)
+#         count = 0
 
-        for i in range(0,n):
-            for j in range(i+1,n):
-                 if arr[i]>arr[j]:
-                      count += 1
-        return count
+#         for i in range(0,n):
+#             for j in range(i+1,n):
+#                  if arr[i]>arr[j]:
+#                       count += 1
+#         return count
+    
+# obj = solution()
+# print(obj.inversion([2, 4, 1, 3, 5]))
+
+class solution:
+    def inversion(self,arr,k):
+        arr.sort()
+        m = k-1
+        return arr[m]
     
 obj = solution()
-print(obj.inversion([2, 4, 1, 3, 5]))
+print(obj.inversion([2, 4, 1, 3, 5],3))
