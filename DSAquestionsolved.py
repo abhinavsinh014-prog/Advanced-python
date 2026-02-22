@@ -405,4 +405,13 @@ class linder:
                 missing.append(i)
             else:
                 return ("no duplicate")
-            
+        count = 0
+        for i in range(0,n):
+            for j in range(0,n):
+                if arr[i]==arr[j]:
+                    count += 1
+                else:
+                    count -= 1
+            missing.append(count)
+        return count
+        
