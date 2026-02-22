@@ -394,7 +394,7 @@
 # print(obj.binary([2, 4, 1, 3, 5],3))
 
 class linder:
-    def m_r(self,arr):
+    def missing_repeting(self,arr):
         n = len(arr)
         count = [0] * (n + 1)
 
@@ -412,4 +412,4 @@ class linder:
 
         return [repeating, missing]
 bol = linder()
-print(bol.m_r([1,1,2,3,5,6]))       
+print(bol.missing_repeting([1,1,2,3,5,6]))       
