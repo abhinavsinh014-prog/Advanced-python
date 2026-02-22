@@ -396,22 +396,20 @@
 class linder:
     def m_r(self,arr):
         n = len(arr)
-        if n == 1:
-            return 0
-        missing = []
-        arr = set(arr)
-        for i in range(0,n):
-            if arr[i]!=i:
-                missing.append(i)
-            else:
-                return ("no duplicate")
-        count = 0
-        for i in range(0,n):
-            for j in range(0,n):
-                if arr[i]==arr[j]:
-                    count += 1
-                else:
-                    count -= 1
-            missing.append(count)
-        return count
-        
+        count = [0] * (n + 1)
+
+        for num in arr:
+            count[num] += 1
+
+        repeating = -1
+        missing = -1
+
+        for i in range(1, n + 1):
+            if count[i] == 2:
+                repeating = i
+            elif count[i] == 0:
+                missing = i
+
+        return [repeating, missing]
+bol = linder()
+print(bol.m_r([1,1,2,3,5,6]))       
