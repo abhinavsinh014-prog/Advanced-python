@@ -383,12 +383,18 @@
 # print(obj.kthnumber([2, 4, 1, 3, 5],3))
 
 
-class solution:
-    def binary(self,arr,k):
-        m = len(arr)
-        for i in range(0,m):
-            if arr[i]==k:
-                print(i)
-        return i 
-obj = solution()
-print(obj.binary([2, 4, 1, 3, 5],3))
+# class solution:
+#     def binary(self,arr,k):
+#         m = len(arr)
+#         for i in range(0,m):
+#             if arr[i]==k:
+#                 print(i)
+#         return i 
+# obj = solution()
+# print(obj.binary([2, 4, 1, 3, 5],3))
+
+class linder:
+    def m_r(self,arr):
+        n = len(arr)
+        if n == 1:
+            return 0
