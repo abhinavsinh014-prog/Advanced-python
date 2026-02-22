@@ -398,3 +398,11 @@ class linder:
         n = len(arr)
         if n == 1:
             return 0
+        missing = []
+        arr = set(arr)
+        for i in range(0,n):
+            if arr[i]!=i:
+                missing.append(i)
+            else:
+                return ("no duplicate")
+            
