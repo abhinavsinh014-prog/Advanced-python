@@ -419,9 +419,12 @@
 class mind:
     def equil(self , arr):
         n = len(arr)
-        prefixsum = [0]*(n+1)
+        prefix = [0]*(n+1)
         for i in range(n):
-            prefixsum[i+1]=prefixsum[i]+arr[i] 
+            prefix[i+1]=prefix[i]+arr[i] 
+        suffix = [0]*(n+1)
+        for i in range(n-1,-1,-1):
+            suffix[i+1]=suffix[i]+arr[i]
 
 mo = mind()
 print(mo.equil([1,2,0,3]))
