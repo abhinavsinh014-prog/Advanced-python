@@ -393,23 +393,32 @@
 # obj = solution()
 # print(obj.binary([2, 4, 1, 3, 5],3))
 
-class linder:
-    def missing_repeting(self,arr):
+
+
+# class linder:
+#     def missing_repeting(self,arr):
+#         n = len(arr)
+#         count = [0] * (n + 1)
+
+#         for num in arr:
+#             count[num] += 1
+
+#         repeating = -1
+#         missing = -1
+
+#         for i in range(1, n + 1):
+#             if count[i] == 2:
+#                 repeating = i
+#             elif count[i] == 0:
+#                 missing = i
+
+#         return [repeating, missing]
+# bol = linder()
+# print(bol.missing_repeting([1,1,2,3,5,6]))      
+
+class mind:
+    def equil(self , arr):
         n = len(arr)
-        count = [0] * (n + 1)
 
-        for num in arr:
-            count[num] += 1
-
-        repeating = -1
-        missing = -1
-
-        for i in range(1, n + 1):
-            if count[i] == 2:
-                repeating = i
-            elif count[i] == 0:
-                missing = i
-
-        return [repeating, missing]
-bol = linder()
-print(bol.missing_repeting([1,1,2,3,5,6]))       
+mo = mind()
+print(mo.equil([1,2,0,3]))
