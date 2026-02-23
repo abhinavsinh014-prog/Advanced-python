@@ -417,14 +417,23 @@
 # print(bol.missing_repeting([1,1,2,3,5,6]))      
 
 class mind:
-    def equil(self , arr):
+    def equil(self, arr):
         n = len(arr)
-        prefix = [0]*(n+1)
+
+        prefix = [0] * (n + 1)
         for i in range(n):
-            prefix[i+1]=prefix[i]+arr[i] 
-        suffix = [0]*(n+1)
-        for i in range(n-1,-1,-1):
-            suffix[i+1]=suffix[i]+arr[i]
+            prefix[i+1] = prefix[i] + arr[i]
+
+        suffix = [0] * (n + 1)
+        for i in range(n-1, -1, -1):
+            suffix[i] = suffix[i+1] + arr[i]
+
+        for i in range(n):
+            if prefix[i] == suffix[i+1]:
+                return i
+
+        return -1
+
 
 mo = mind()
 print(mo.equil([1,2,0,3]))
