@@ -452,15 +452,25 @@
 
 
 class sol:
-    def peak(self,arr):
-        
-        n=len(arr)
+    def peak(self, arr):
+        n = len(arr)
 
-        for i in range(0,n):
-            if arr[i]<arr[i+1]:
-                continue
+        # if only one element
+        if n == 1:
+            return 0
+
+        for i in range(n):
+
+            if i == 0:
+                if arr[i] > arr[i+1]:
+                    return i
+
+            elif i == n-1:
+                if arr[i] > arr[i-1]:
+                    return i
+
             else:
-                return arr[i]
-
+                if arr[i] > arr[i-1] and arr[i] > arr[i+1]:
+                    return i
 mo = sol()
-print(mo.peak([1, 2, 4, 5, 7, 8, 3]))          
+print(mo.peak([1, 2, 4, 5, 7, 8]))          
