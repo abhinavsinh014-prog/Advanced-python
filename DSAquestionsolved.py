@@ -451,26 +451,39 @@
 # print(mo.equil([1,2,0,3]))
 
 
-class sol:
-    def peak(self, arr):
-        n = len(arr)
+# class sol:
+#     def peak(self, arr):
+#         n = len(arr)
 
-        # if only one element
-        if n == 1:
-            return 0
+#         # if only one element
+#         if n == 1:
+#             return 0
 
-        for i in range(n):
+#         for i in range(n):
 
-            if i == 0:
-                if arr[i] > arr[i+1]:
-                    return i
+#             if i == 0:
+#                 if arr[i] > arr[i+1]:
+#                     return i
 
-            elif i == n-1:
-                if arr[i] > arr[i-1]:
-                    return i
+#             elif i == n-1:
+#                 if arr[i] > arr[i-1]:
+#                     return i
 
-            else:
-                if arr[i] > arr[i-1] and arr[i] > arr[i+1]:
-                    return i
-mo = sol()
-print(mo.peak([1, 2, 4, 5, 7, 8]))          
+#             else:
+#                 if arr[i] > arr[i-1] and arr[i] > arr[i+1]:
+#                     return i
+# mo = sol()
+# print(mo.peak([1, 2, 4, 5, 7, 8]))          
+
+class Solution:
+    def rotateArr(self, arr, d):
+        n=len(arr)
+
+        rotated_arr = []
+
+        for i in range(d,n):
+            rotated_arr.append(arr[i])
+        return rotated_arr
+
+rot = Solution()
+print(rot.rotateArr([1, 2, 3, 4, 5],2))
