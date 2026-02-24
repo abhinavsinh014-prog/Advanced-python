@@ -416,36 +416,51 @@
 # bol = linder()
 # print(bol.missing_repeting([1,1,2,3,5,6]))      
 
-class mind:
-    def equil(self, arr):
-        total = sum(arr)
-        left_sum = 0
+# class mind:
+#     def equil(self, arr):
+#         total = sum(arr)
+#         left_sum = 0
 
-        for i in range(len(arr)):
-            total -= arr[i]
+#         for i in range(len(arr)):
+#             total -= arr[i]
 
-            if left_sum == total:
-                return i
+#             if left_sum == total:
+#                 return i
 
-            left_sum += arr[i]
+#             left_sum += arr[i]
 
-        return -1
-        # n = len(arr)
+#         return -1
+#         # n = len(arr)
 
-        # prefix = [0] * (n + 1)
-        # for i in range(n):
-        #     prefix[i+1] = prefix[i] + arr[i]
+#         # prefix = [0] * (n + 1)
+#         # for i in range(n):
+#         #     prefix[i+1] = prefix[i] + arr[i]
 
-        # suffix = [0] * (n + 1)
-        # for i in range(n-1, -1, -1):
-        #     suffix[i] = suffix[i+1] + arr[i]
+#         # suffix = [0] * (n + 1)
+#         # for i in range(n-1, -1, -1):
+#         #     suffix[i] = suffix[i+1] + arr[i]
 
-        # for i in range(n):
-        #     if prefix[i] == suffix[i+1]:
-        #         return i
+#         # for i in range(n):
+#         #     if prefix[i] == suffix[i+1]:
+#         #         return i
 
-        # return -1
+#         # return -1
 
 
-mo = mind()
-print(mo.equil([1,2,0,3]))
+# mo = mind()
+# print(mo.equil([1,2,0,3]))
+
+
+class sol:
+    def peak(self,arr):
+        
+        n=len(arr)
+
+        for i in range(0,n):
+            if arr[i]<arr[i+1]:
+                continue
+            else:
+                return arr[i]
+
+mo = sol()
+print(mo.peak([1, 2, 4, 5, 7, 8, 3]))          
