@@ -479,6 +479,8 @@ class Solution:
     def rotateArr(self, arr, d):
         n=len(arr)
 
+        d=d%n
+
         rotated_arr = []
 
         for i in range(d,n):
@@ -489,4 +491,4 @@ class Solution:
         return rotated_arr
 
 rot = Solution()
-print(rot.rotateArr([1, 2, 3, 4, 5],2))
+print(rot.rotateArr([7, 3, 9, 1],9))
