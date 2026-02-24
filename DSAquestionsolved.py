@@ -483,6 +483,9 @@ class Solution:
 
         for i in range(d,n):
             rotated_arr.append(arr[i])
+        for j in range(0,d):
+            rotated_arr.append(arr[j])
+        
         return rotated_arr
 
 rot = Solution()
