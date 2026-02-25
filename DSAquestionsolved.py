@@ -501,15 +501,22 @@ class platform:
         if n != m :
             return 0
         
+        arr.sort()
+        dep.sort()
+
         platform = 1
         max_platform = 1
-        
-        for i in range(n):
-            arr[i]
-        for j in range(m):
-            if arr[j-1]>arr[i]:
+
+        i = 1
+        j = 0
+
+        while i<n and j<n:
+            if arr[i]<arr[j]:
                 platform += 1
-        return platform
-            
+                i += 1
+            else:
+                platform -= 1
+                j += 1
+        return platform  
 t1 = platform()
 print(t1.minplatform([900, 940, 950, 1100, 1500, 1800],[910, 1200, 1120, 1130, 1900, 2000]))
