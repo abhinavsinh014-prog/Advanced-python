@@ -493,32 +493,33 @@
 # rot = Solution()
 # print(rot.rotateArr([7, 3, 9, 1],9))
 
-class platform:
-    def minplatform(self,arr,dep):
+class Platform:
+    def minplatform(self, arr, dep):
         n = len(arr)
-        m = len(dep)
 
-        if n != m :
+        if n != len(dep):
             return 0
-        
+
         arr.sort()
         dep.sort()
-
-        platform = 1
-        max_platform = 1
 
         i = 1
         j = 0
 
-        while i<n and j<n:
-            if arr[i]<=arr[j]:
+        platform = 1
+        max_platform = 1
+
+        while i < n and j < n:
+            if arr[i] <= dep[j]:
                 platform += 1
                 i += 1
             else:
                 platform -= 1
                 j += 1
-            max_platform = max(max_platform,platform)
-        return max_platform  
+
+            max_platform = max(max_platform, platform)
+
+        return max_platform 
     
-t1 = platform()
+t1 = Platform()
 print(t1.minplatform([900, 940, 950, 1100, 1500, 1800],[910, 1200, 1120, 1130, 1900, 2000]))
