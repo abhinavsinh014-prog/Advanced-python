@@ -475,20 +475,40 @@
 # mo = sol()
 # print(mo.peak([1, 2, 4, 5, 7, 8]))          
 
-class Solution:
-    def rotateArr(self, arr, d):
-        n=len(arr)
+# class Solution:
+#     def rotateArr(self, arr, d):
+#         n=len(arr)
 
-        d=d%n
+#         d=d%n
 
-        rotated_arr = []
+#         rotated_arr = []
 
-        for i in range(d,n):
-            rotated_arr.append(arr[i])
-        for j in range(0,d):
-            rotated_arr.append(arr[j])
+#         for i in range(d,n):
+#             rotated_arr.append(arr[i])
+#         for j in range(0,d):
+#             rotated_arr.append(arr[j])
         
-        return rotated_arr
+#         return rotated_arr
 
-rot = Solution()
-print(rot.rotateArr([7, 3, 9, 1],9))
+# rot = Solution()
+# print(rot.rotateArr([7, 3, 9, 1],9))
+
+class platform:
+    def minplatform(self,arr,dep):
+        n = len(arr)
+        m = len(dep)
+
+        if n != m :
+            return 0
+        
+        platform = 1
+
+        for i in range(n):
+            arr[i]
+        for j in range(m):
+            if arr[j-1]>arr[i]:
+                platform += 1
+        return platform
+            
+t1 = platform()
+print(t1.minplatform([900, 940, 950, 1100, 1500, 1800],[910, 1200, 1120, 1130, 1900, 2000]))
