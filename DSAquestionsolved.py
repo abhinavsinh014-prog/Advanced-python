@@ -502,7 +502,8 @@ class platform:
             return 0
         
         platform = 1
-
+        max_platform = 1
+        
         for i in range(n):
             arr[i]
         for j in range(m):
