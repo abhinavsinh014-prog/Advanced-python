@@ -27,4 +27,12 @@ class SLL:
                 return temp
             temp=temp.next
         return None
-    
+    def insert_after(self,temp,data):
+        if temp is not None:
+            n=node(data,temp.next)
+            temp.next=n
+    def print_list(self):
+        temp = self.start
+        while temp is not None:
+            print(temp.item,end=" ")
+            temp=temp.next
