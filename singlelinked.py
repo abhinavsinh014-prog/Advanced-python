@@ -8,9 +8,11 @@ class SLL:
 
     def is_empty(self):
         return self.start==None
-    def start(self,data):
+    
+    def insert_start(self,data):
         n=node(data,self.start)
         self.start=n
+
     def last(self,data):
         n=node(data)
         if not self.is_empty():
@@ -22,7 +24,7 @@ class SLL:
             self.start=n
     def search(self,data):
         temp=self.start   
-        while temp.start is not None:
+        while temp is not None:
             if temp.item == data:
                 return temp
             temp=temp.next
@@ -36,3 +38,11 @@ class SLL:
         while temp is not None:
             print(temp.item,end=" ")
             temp=temp.next
+    
+mylist = SLL()
+mylist.insert_start(20)
+mylist.last(30)
+mylist.insert_start(10)
+mylist.insert_after(mylist.search(20),25)
+mylist.print_list()
+print()
