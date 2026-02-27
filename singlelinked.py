@@ -36,7 +36,7 @@ class SLL:
     def print_list(self):
         temp = self.start
         while temp is not None:
-            print(temp.item,end=" ")
+            print(temp.item,end=",")
             temp=temp.next
     
 mylist = SLL()
