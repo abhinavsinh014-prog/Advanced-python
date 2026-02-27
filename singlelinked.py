@@ -41,7 +41,16 @@ class SLL:
     def delete_first(self):
         if self.start is not None:
             self.start=self.start.next
-    
+    def delete_last(self):
+        if self.start is None:
+            pass
+        elif self.start is None:
+            self.start=None
+        else:
+            temp=self.start
+            while temp.next.next is not None:
+                temp=temp.next
+            temp.next=None
 mylist = SLL()
 mylist.last(200)
 mylist.last(30)
