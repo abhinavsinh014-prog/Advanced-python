@@ -51,12 +51,29 @@ class SLL:
             while temp.next.next is not None:
                 temp=temp.next
             temp.next=None
+    def delete_item(self,data):
+        if self.start is None:
+            pass
+        elif self.start.next is None:
+            if self.start.item==data:
+                self.start=None
+        else:
+            temp=self.start
+            if temp.item==data:
+                self.start=None
+            else:
+                while temp.next is None:
+                    if temp.next.item == data:
+                        temp.next=temp.next.next
+                        break
+                    temp=temp.next
 
 mylist = SLL()
 mylist.last(200)
 mylist.last(30)
 mylist.insert_start(50)
 mylist.insert_after(mylist.search(200),25)
-mylist.delete_last()
 mylist.print_list()
 print()
+mylist.delete_item(200)
+mylist.print_list()
