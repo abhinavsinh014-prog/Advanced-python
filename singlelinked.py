@@ -51,11 +51,12 @@ class SLL:
             while temp.next.next is not None:
                 temp=temp.next
             temp.next=None
+
 mylist = SLL()
 mylist.last(200)
 mylist.last(30)
 mylist.insert_start(50)
 mylist.insert_after(mylist.search(200),25)
-mylist.delete_first()
+mylist.delete_last()
 mylist.print_list()
 print()
