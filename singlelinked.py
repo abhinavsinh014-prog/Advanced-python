@@ -38,11 +38,15 @@ class SLL:
         while temp is not None:
             print(temp.item,end=" ")
             temp=temp.next
+    def delete_first(self):
+        if self.start is not None:
+            self.start=self.start.next
     
 mylist = SLL()
-mylist.insert_start(20)
+mylist.last(200)
 mylist.last(30)
-mylist.insert_start(10)
-mylist.insert_after(mylist.search(20),25)
+mylist.insert_start(50)
+mylist.insert_after(mylist.search(200),25)
+mylist.delete_first()
 mylist.print_list()
 print()
