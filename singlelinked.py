@@ -111,5 +111,15 @@ class remove_loop:
                 while fast.next!=slow:
 
                   fast= fast.next
+            else:
 
+               while slow.next!= fast.next:
+
+                slow= slow.next
+
+                fast= fast.next
+
+            fast.next=None
+
+            return True
             
