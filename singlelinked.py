@@ -93,3 +93,11 @@ class remove_loop:
             if head is None and head.next is None:
                 return False
             
+            slow = head
+            fast = head
+
+            while fast and fast.next is not None:
+                slow = slow.next
+                fast = fast.next.next
+
+                
