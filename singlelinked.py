@@ -99,5 +99,5 @@ class remove_loop:
             while fast and fast.next is not None:
                 slow = slow.next
                 fast = fast.next.next
-
-                
+                if slow == fast :
+                    break
