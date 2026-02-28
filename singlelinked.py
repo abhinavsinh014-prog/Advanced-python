@@ -77,3 +77,19 @@ mylist.print_list()
 print()
 mylist.delete_item(200)
 mylist.print_list()
+
+
+#question
+
+# Remove loop in Linked List
+
+class node:
+    def __init__(self,val):
+        self.next = None
+        self.val = val
+
+class remove_loop:
+        def remove(self,head):
+            if head is None and head.next is None:
+                return False
+            
