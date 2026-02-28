@@ -101,3 +101,15 @@ class remove_loop:
                 fast = fast.next.next
                 if slow == fast :
                     break
+            if(slow!= fast):
+                return False
+
+            slow=head
+
+            if slow== fast:
+
+                while fast.next!=slow:
+
+                  fast= fast.next
+
+            
