@@ -1,4 +1,4 @@
-from random import *
+f = [1,2,6,3]
+x  = [52 ,5,50,6]
 
-v = random()
-print(v)
+print(f+x)
