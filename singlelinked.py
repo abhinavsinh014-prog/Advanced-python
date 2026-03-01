@@ -122,4 +122,7 @@ class remove_loop:
             fast.next=None
 
             return True
+
+t1 = remove_loop()
+print(t1.remove([1,3,4],2))
             
