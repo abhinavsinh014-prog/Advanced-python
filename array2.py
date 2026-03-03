@@ -7,5 +7,6 @@ list_3 = [9, 10, 11, 12]
 max = array([list_1, 
                     list_2,
                          list_3])
-print("Numpy multi dimensional array in python\n",
-      max)
+# print("Numpy multi dimensional array in python\n",
+#       max)
+print('array shape  :',max.shape)
