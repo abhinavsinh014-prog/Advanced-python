@@ -22,3 +22,10 @@ nam = np.arange(1, 20 , 2,
           dtype = np.int16)
 
 print(nam)
+
+
+cam = np.empty([4, 3],
+         dtype = np.int32,
+         order = 'f')
+
+print(cam)
