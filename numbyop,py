@@ -2,7 +2,19 @@ import numpy as np
 
 a = np.array([5, 72, 13, 100])
 b = np.array([2, 5, 10, 30])
+
+#Addition
 res = np.add(a, b)
-print('addition',res)
+print('addition :',res)
+
+#Substractiion
 ras = np.subtract(a, b)
-print('substartion',ras)
+print('substartion :',ras)
+
+#Multiplication
+rbs = np.multiply(a, b)
+print('multiply :',rbs)
+
+#Division
+rns = np.divide(a, b)
+print('Division',rns)
