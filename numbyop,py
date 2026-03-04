@@ -46,3 +46,18 @@ a = np.array([12, 24, 35, 45, 6, 72])
 b = np.array(["Adult", "Minor"])
 vers = np.where(a > 18, b[0], b[1])
 print(vers)
+
+#matrix multiplication
+m = np.array([[1, 6], [3, 4]])
+v = np.array([10, 2])
+matr = m * v
+print(matr)
+
+#multiply
+
+f = np.array([[0.4,0.5,6.3],
+     [0.3,25,0.91],
+     [0.2,0.12,3.9]])
+sd = np.array([6,5,3])
+fd = f*sd
+print(fd)
