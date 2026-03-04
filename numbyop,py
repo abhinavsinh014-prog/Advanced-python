@@ -3,6 +3,8 @@ import numpy as np
 a = np.array([5, 72, 13, 100])
 b = np.array([2, 5, 10, 30])
 
+print(a,b)
+
 #Addition
 res = np.add(a, b)
 print('addition :',res)
@@ -26,3 +28,21 @@ print("Power :",rvs)
 #MOD
 rds = np.mod(a,b)
 print("Mod :",rds)
+
+#Array Broadcasting
+x = 10
+print('just sum :',a+x)
+print('1D',a+12)
+
+#2D sum
+c = np.array([2, 4, 6])
+d = np.array([[1, 3, 5], [7, 9, 11]])
+kes = c+d
+print(kes)
+
+#conditional statement
+
+a = np.array([12, 24, 35, 45, 6, 72])
+b = np.array(["Adult", "Minor"])
+vers = np.where(a > 18, b[0], b[1])
+print(vers)
