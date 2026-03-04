@@ -18,3 +18,11 @@ print('multiply :',rbs)
 #Division
 rns = np.divide(a, b)
 print('Division',rns)
+
+#Power 
+rvs = np.power(a,b)
+print("Power :",rvs)
+
+#MOD
+rds = np.mod(a,b)
+print("Mod :",rds)
