@@ -71,6 +71,7 @@ temp = np.array([ [30, 32, 34, 33, 31],
 corr = np.array([1.5, -0.5, 2.0])
 res = temp + corr[:, None]
 print(res)
+print()
 
 #normaization image data
 
@@ -81,5 +82,10 @@ img = np.array([ [100, 120, 130],
 m = img.mean(axis=0)
 s = img.std(axis=0)
 print(f"mean:{m} and std :{s}")
-res = (img - m) / s
-print(res)
+s = (img - m) / s
+print(s)
+print()
+#Centering Data in Machine Learning
+
+df = img - m
+print(df)
