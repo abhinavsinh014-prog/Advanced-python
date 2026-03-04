@@ -61,3 +61,13 @@ f = np.array([[0.4,0.5,6.3],
 sd = np.array([6,5,3])
 fd = f*sd
 print(fd)
+
+#matrix sum
+
+temp = np.array([ [30, 32, 34, 33, 31],
+                  [25, 27, 29, 28, 26],
+                  [20, 22, 24, 23, 21] ])
+
+corr = np.array([1.5, -0.5, 2.0])
+res = temp + corr[:, None]
+print(res)
