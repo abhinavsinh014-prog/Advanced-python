@@ -4,7 +4,7 @@ a = np.array([5, 72, 13, 100])
 b = np.array([2, 5, 10, 30])
 
 print(a,b)
-
+print(np.ndim(a))
 #Addition
 res = np.add(a, b)
 print('addition :',res)
@@ -85,6 +85,8 @@ print(f"mean:{m} and std :{s}")
 s = (img - m) / s
 print(s)
 print()
+
+
 #Centering Data in Machine Learning
 
 df = img - m
