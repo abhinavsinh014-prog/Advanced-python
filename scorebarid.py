@@ -24,4 +24,10 @@ team_B =  {"player_1":0,
            ,"player_10":0,
            "player_11":0} 
 
-Toss = rn.random(team_A or team_B)
+call = input()
+if call == 'head':
+    print('that team won')
+elif call == 'tail':
+    print('that team won')
+else :
+    print('invlaid call')
