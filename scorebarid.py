@@ -1,3 +1,5 @@
+import random as rn
+
 team_A =  {"player_1":0,
            "player_2":0,
            "player_3":0,
@@ -21,3 +23,5 @@ team_B =  {"player_1":0,
            "player_9":0
            ,"player_10":0,
            "player_11":0} 
+
+Toss = rn.random(team_A or team_B)
