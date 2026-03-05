@@ -1,5 +1,8 @@
 import random as rn
 
+teamA_score = 0
+teamB_score = 0
+
 team_A =  {"player_1":0,
            "player_2":0,
            "player_3":0,
