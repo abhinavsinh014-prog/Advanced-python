@@ -3,7 +3,7 @@ import random
 teamA_score = 0
 teamB_score = 0
 
-overs = input("enter number of overs :")
+n = int(input("enter number of overs :"))
 
 team_A =  {"player_1":0,
            "player_2":0,
@@ -34,7 +34,10 @@ winner = random.choice(["teamA","teamB"])
 
 print('toss winner is ',winner)
 
-winner_choice = input("bating or bowling")
+winner_choice = input("bating or bowling :")
 
-if winner is 'teamA' :
-    if winner_choice is "batting" :
+if winner_choice == 'bating' :
+    for overs in range(0,n+1) :
+        for balls in range(1,7) :
+            run = int(input())
+            print(f"Over:{overs}.{balls}") 
