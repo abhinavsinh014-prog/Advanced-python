@@ -4,6 +4,7 @@ teamA_score = 0
 teamB_score = 0
 
 n = int(input("enter number of overs :"))
+total_scoe = 0
 
 team_A =  {"player_1":0,
            "player_2":0,
@@ -37,7 +38,9 @@ print('toss winner is ',winner)
 winner_choice = input("bating or bowling :")
 
 if winner_choice == 'bating' :
-    for overs in range(0,n+1) :
+    for overs in range(0,n) :
         for balls in range(1,7) :
             run = int(input())
             print(f"Over:{overs}.{balls}") 
+            total_scoe += run
+        print(f"Score : {total_scoe}  Over : {overs}")
