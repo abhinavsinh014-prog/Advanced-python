@@ -40,7 +40,7 @@ winner_choice = input("bating or bowling :")
 if winner_choice == 'bating' :
     for overs in range(0,n) :
         for balls in range(1,7) :
-            run = int(input())
-            print(f"Over:{overs}.{balls}") 
+            print(f"Over:{overs}.{balls}")
+            run = int(input()) 
             total_scoe += run
-        print(f"Score : {total_scoe}  Over : {overs}")
+        print(f"Score : {total_scoe}  Over : {overs+1}")
