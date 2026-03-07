@@ -7,29 +7,29 @@ total_score_2nd = 0
 wickets_1st = 0
 wickets_2nd = 0
 
-team_A =  {"player_1":0,
-           "player_2":0,
-           "player_3":0,
-           "player_4":0,
-           "player_5":0,
-           "player_6":0,
-           "player_7":0,
-           "player_8":0,
-           "player_9":0
-           ,"player_10":0,
-           "player_11":0}
+team_A =  {"player_1":{"runs" : 0,"wickets":0},
+           "player_2":{"runs" : 0,"wickets":0},
+           "player_3":{"runs" : 0,"wickets":0},
+           "player_4":{"runs" : 0,"wickets":0},
+           "player_5":{"runs" : 0,"wickets":0},
+           "player_6":{"runs" : 0,"wickets":0},
+           "player_7":{"runs" : 0,"wickets":0},
+           "player_8":{"runs" : 0,"wickets":0},
+           "player_9":{"runs" : 0,"wickets":0},
+           "player_10":{"runs" : 0,"wickets":0},
+           "player_11":{"runs" : 0,"wickets":0}}
 
-team_B =  {"player_1":0,
-           "player_2":0,
-           "player_3":0,
-           "player_4":0,
-           "player_5":0,
-           "player_6":0,
-           "player_7":0,
-           "player_8":0,
-           "player_9":0
-           ,"player_10":0,
-           "player_11":0} 
+team_B =  {"player_1":{"runs" : 0,"wickets":0},
+           "player_2":{"runs" : 0,"wickets":0},
+           "player_3":{"runs" : 0,"wickets":0},
+           "player_4":{"runs" : 0,"wickets":0},
+           "player_5":{"runs" : 0,"wickets":0},
+           "player_6":{"runs" : 0,"wickets":0},
+           "player_7":{"runs" : 0,"wickets":0},
+           "player_8":{"runs" : 0,"wickets":0},
+           "player_9":{"runs" : 0,"wickets":0},
+           "player_10":{"runs" : 0,"wickets":0},
+           "player_11":{"runs" : 0,"wickets":0}}
 
 
 winner = random.choice(["teamA","teamB"])
