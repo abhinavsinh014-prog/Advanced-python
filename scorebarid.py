@@ -1,12 +1,5 @@
 import random 
 
-n = int(input("enter number of overs :"))
-
-total_score_1st = 0
-total_score_2nd = 0
-wickets_1st = 0
-wickets_2nd = 0
-
 team_A =  {"player_1":{"runs" : 0,"wickets":0},
            "player_2":{"runs" : 0,"wickets":0},
            "player_3":{"runs" : 0,"wickets":0},
@@ -31,51 +24,69 @@ team_B =  {"player_1":{"runs" : 0,"wickets":0},
            "player_10":{"runs" : 0,"wickets":0},
            "player_11":{"runs" : 0,"wickets":0}}
 
+def toss():
+    winner = random.choice(["Team A", "Team B"])
+    print("Toss winner:", winner)
 
-winner = random.choice(["teamA","teamB"])
+    choice = input("Bat or Bowl: ").lower()
 
-print('toss winner is ',winner)
-
-winner_choice = input("bating or bowling :")
-
-if winner_choice == 'bating' :
-    print(f"{winner} choose to bating first ")
-elif winner_choice == 'bowling' :
-    print(f"{winner} choose to feilding first ")
-
-print("Let's Start the Game")
-
-for inning in range(1,3):
-    if inning == 1:
-      print(f"{"1st inning"}")
-      for overs in range(0,n) :
-        for balls in range(1,7) :
-            print(f"Over:{overs}.{balls}")
-            run = int(input())
-            if run == -1:
-                wickets_1st += 1
-                if wickets_1st==11:
-                    break
-            else:
-                total_score_1st += run
-        print(f"Score : {total_score_1st}  Over : {overs+1} wickets : {wickets_1st}")
+    if choice == "bat":
+        batting = winner
     else:
-        print(f"{"2nd inning"}")
-        for overs in range(0,n) :
-            for balls in range(1,7) :
-                print(f"Over:{overs}.{balls}")
-                run = int(input())
-                if run == -1:
-                    wickets_2nd+= 1
-                    if wickets_2nd==11:
-                        break
-                else:
-                    total_score_2nd += run
-                    if total_score_1st<total_score_2nd :
-                        break
-        print(f"Score : {total_score_2nd}  Over : {overs+1} wickets : {wickets_2nd}")
+        batting = "Team B" if winner == "Team A" else "Team A"
 
-if total_score_1st<total_score_2nd:
-    print("Team 2 is winner")
-else:
-    print("Team 1 is winner")
+    return batting
+
+
+def play_innings(overs, target=None):
+    score = 0
+    wickets = 0
+
+    for over in range(overs):
+        for ball in range(1, 7):
+
+            print(f"Over {over}.{ball}")
+            run = int(input("Enter run (-1 for wicket): "))
+
+            if run == -1:
+                wickets += 1
+                print("WICKET!")
+
+                if wickets == 10:
+                    return score
+
+            else:
+                score += run
+
+            if target and score > target:
+                return score
+
+        print(f"Score: {score}/{wickets}")
+
+    return score
+
+
+def declare_winner(score1, score2):
+    print("\nFinal Score")
+    print("Team 1:", score1)
+    print("Team 2:", score2)
+
+    if score1 > score2:
+        print("Team 1 Wins")
+    elif score2 > score1:
+        print("Team 2 Wins")
+    else:
+        print("Match Draw")
+
+
+overs = int(input("Enter number of overs: "))
+
+batting_first = toss()
+
+print("\nFirst Innings")
+score1 = play_innings(overs)
+
+print("\nSecond Innings")
+score2 = play_innings(overs, score1)
+
+declare_winner(score1, score2)
