@@ -58,10 +58,12 @@ for inning in range(1,3):
                 run = int(input())
                 if run == -1:
                     wickets += 1
-                    if wickets==11 or total_score_1st<total_score_2nd:
+                    if wickets==11:
                         break
                 else:
                     total_score_2nd += run
+                    if total_score_1st<total_score_2nd :
+                        break
         print(f"Score : {total_score_2nd}  Over : {overs+1} wickets : {wickets}")
 
 if total_score_1st<total_score_2nd:
