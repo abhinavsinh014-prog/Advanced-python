@@ -72,9 +72,9 @@ def declare_winner(score1, score2):
     print("Team 2:", score2)
 
     if score1 > score2:
-        print("Team 1 Wins")
+        print("wow\nTeam 1 Wins")
     elif score2 > score1:
-        print("Team 2 Wins")
+        print("WOW\nTeam 2 Wins")
     else:
         print("Match Draw")
 
