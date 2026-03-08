@@ -1,5 +1,5 @@
 # adding values by using list function
-tupel = (117,49,254,94,157,83,82)
+tupel = (117,49,254,914,157,83,82)
 typlr = list(tupel)
 typlr.append(160)
 print(typlr,type(typlr))
