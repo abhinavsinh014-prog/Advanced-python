@@ -12,3 +12,8 @@ lst = ['Geeks', 'For', 'Geeks', 'is', 'portal', 'for', 'Geeks']
 
 s = pd.DataFrame(lst)
 print(s)
+
+#Loading Data
+
+p = pd.read_csv("p.csv")
+print(p.head())
