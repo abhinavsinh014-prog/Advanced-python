@@ -21,3 +21,8 @@ print(p.head())
 #info
 
 print(p.info())
+
+#Handling missing data
+
+print(p.isnull().sum())
+p = p.fillna(0)
