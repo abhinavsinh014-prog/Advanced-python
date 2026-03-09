@@ -17,3 +17,7 @@ print(s)
 
 p = pd.read_csv("p.csv")
 print(p.head())
+
+#info
+
+print(p.info())
