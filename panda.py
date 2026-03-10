@@ -30,3 +30,11 @@ p = p.fillna(0)
 #Selecting and Filtering Data
 ages = p[(p['age']>25) & (p['sales']>220)] 
 print(ages)
+
+#Adding column
+p['total'] = p['a'] + p['b']
+print(p.head())
+
+#Removing column
+p=p.drop('city',axis =1 )
+print(p.head())
