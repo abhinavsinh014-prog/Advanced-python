@@ -26,3 +26,7 @@ print(p.info())
 
 print(p.isnull().sum())
 p = p.fillna(0)
+
+#Selecting and Filtering Data
+ages = p[(p['age']>25) & (p['sales']>220)] 
+print(ages)
