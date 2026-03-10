@@ -38,3 +38,7 @@ print(p.head())
 #Removing column
 p=p.drop('city',axis =1 )
 print(p.head())
+
+#Grouping data
+res = p.groupby('category')['sales'].sum()
+print(res)
