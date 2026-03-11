@@ -6,9 +6,20 @@ lf = pd.DataFrame(lst)                 #creating pandas dataframe
 print(lf)
 
  
-data = {'Name':['Tom', 'nick', 'krish', 'jack'],
-        'Age':[20, 21, 19, 18]}
+data = {'Name':['Tom', 'nick', 'krish', 'jack'],          
+        'Age':[20, 21, 19, 18]}                #creating pandas dataframe by using dictionary
  
 df = pd.DataFrame(data)
  
 print(df)
+
+print()
+
+deta = {'Name':['Jai', 'Princi', 'Gaurav', 'Anuj'],
+        'Age':[27, 24, 22, 32],
+        'Address':['Delhi', 'Kanpur', 'Allahabad', 'Kannauj'],
+        'Qualification':['Msc', 'MA', 'MCA', 'Phd']}
+ 
+gf = pd.DataFrame(deta)
+ 
+print(gf[['Name', 'Qualification']])
