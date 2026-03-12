@@ -25,13 +25,25 @@ import pandas as pd
 # print(gf[['Name', 'Qualification']])
 
 data = pd.read_csv("nba.csv",index_col="Name")
-first = data.loc["Avery Bradley"]   #row selection
+first = data.loc["Avery Bradley"]   #row selection using iloc
 second = data.loc["Tyus Jones"]
 
-# third = data["Age"]
+third = data["Age"]                #indexing operator
 
-fourth = data.iloc[0]
+fourth = data.iloc[0]              #row selection using loc
 
 print(first,"\n\n\n",second)
 
 print(fourth)
+
+ 
+import numpy as np
+ 
+dict = {'First Score':[100, 90, np.nan, 95],
+        'Second Score': [30, 45, 56, np.nan],
+        'Third Score':[np.nan, 40, 80, 98]}
+
+df = pd.DataFrame(dict)
+ 
+print(df.isnull())
+print(df.notnull())
