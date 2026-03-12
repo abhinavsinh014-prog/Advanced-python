@@ -46,4 +46,9 @@ dict = {'First Score':[100, 90, np.nan, 95],
 df = pd.DataFrame(dict)
  
 print(df.isnull())
+print()
+
 print(df.notnull())
+print()
+
+print(df.fillna(25))
