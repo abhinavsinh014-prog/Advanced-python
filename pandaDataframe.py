@@ -25,7 +25,11 @@ import pandas as pd
 # print(gf[['Name', 'Qualification']])
 
 data = pd.read_csv("nba.csv",index_col="Name")
-first = data.loc["Avery Bradley"]
+first = data.loc["Avery Bradley"]   #row selection
 second = data.loc["Tyus Jones"]
 
+third = data["Age"]
+
 print(first,"\n\n\n",second)
+
+print(third)
