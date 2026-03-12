@@ -28,8 +28,10 @@ data = pd.read_csv("nba.csv",index_col="Name")
 first = data.loc["Avery Bradley"]   #row selection
 second = data.loc["Tyus Jones"]
 
-third = data["Age"]
+# third = data["Age"]
+
+fourth = data.iloc[0]
 
 print(first,"\n\n\n",second)
 
-print(third)
+print(fourth)
