@@ -98,5 +98,8 @@ data = {
 df = pd.DataFrame(data)
 print(df)
 
-duplicates = df.duplicated()
+duplicates = df.duplicated()         # Using duplicated() Method
 print(duplicates)
+
+df_no_duplicates = df.drop_duplicates(subset = ["Name","City"])
+print(df_no_duplicates)
