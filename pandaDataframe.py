@@ -37,21 +37,23 @@ import pandas as pd
 # print(fourth)
 
  
-# import numpy as np
+import numpy as np
  
-# dict = {'First Score':[100, 90, np.nan, 95],
-#         'Second Score': [30, 45, 56, np.nan],
-#         'Third Score':[np.nan, 40, 80, 98]}
+dict = {'First Score':[100, 90, np.nan, 95],
+        'Second Score': [30, 45, 56, np.nan],
+        'Third Score':[np.nan, 40, 80, 98]}
 
-# df = pd.DataFrame(dict)
+df = pd.DataFrame(dict)
  
-# print(df.isnull())
-# print()
+print(df.isnull())
+print()
 
-# print(df.notnull())
-# print()
+print(df.notnull())
+print()
 
-# print(df.fillna(0)) #any value you put here instead of 0 is replaced by that number in place of missing data 
+print(df.fillna(0)) #any value you put here instead of 0 is replaced by that number in place of missing data 
+print(df.fillna(method='pad')) #it puts the previous value
+
 
 # dict = {'name':["aparna", "pankaj", "sudhir", "Geeku"],
 #         'degree': ["MBA", "BCA", "M.Tech", "MBA"],
@@ -63,12 +65,12 @@ import pandas as pd
 #     print(i, j)
 #     print()
 
-d = pd.read_csv("employees.csv")
+# d = pd.read_csv("employees.csv")
 
-nmg = pd.notnull(d["Gender"])
-ngmd = d[nmg]
+# nmg = pd.notnull(d["Gender"])
+# ngmd = d[nmg]
 
-print(ngmd)
+# print(ngmd)
 
 # boll_series = pd.isnull(d["Gender"])
 # missing_series= d[boll_series]
