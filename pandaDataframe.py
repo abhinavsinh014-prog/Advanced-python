@@ -63,18 +63,23 @@ import pandas as pd
 #     print(i, j)
 #     print()
 
-# d = pd.read_csv("employees.csv")
+d = pd.read_csv("employees.csv")
+
+nmg = pd.notnull(d["Gender"])
+ngmd = d[nmg]
+
+print(ngmd)
 
 # boll_series = pd.isnull(d["Gender"])
 # missing_series= d[boll_series]
 # print(missing_series)
 
-import numpy as np
+# import numpy as np
 
-data = {'Name': ['Amit', 'Sita', np.nan, 'Raj'],
-        'Age': [25, np.nan, 22, 28]}
+# data = {'Name': ['Amit', 'Sita', np.nan, 'Raj'],
+#         'Age': [25, np.nan, 22, 28]}
 
-df = pd.DataFrame(data)
+# df = pd.DataFrame(data)
 
-# Check for missing values using isna()
-print(df.isna())
+# # Check for missing values using isna()
+# print(df.isna())
