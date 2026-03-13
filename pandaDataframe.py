@@ -37,22 +37,24 @@ import pandas as pd
 # print(fourth)
 
  
-import numpy as np
+# import numpy as np
  
-dict = {'First Score':[100, 90, np.nan, 95],
-        'Second Score': [30, 45, 56, np.nan],
-        'Third Score':[np.nan, 40, 80, 98]}
+# dict = {'First Score':[100, 90, np.nan, 95],
+#         'Second Score': [30, 45, 56, np.nan],
+#         'Third Score':[np.nan, 40, 80, 98]}
 
-df = pd.DataFrame(dict)
+# df = pd.DataFrame(dict)
  
-print(df.isnull())
-print()
+# print(df.isnull())
+# print()
 
-print(df.notnull())
-print()
+# print(df.notnull())
+# print()
 
-print(df.fillna(0)) #any value you put here instead of 0 is replaced by that number in place of missing data 
-print(df.fillna(method='pad')) #it puts the previous value
+# print(df.fillna(0)) #any value you put here instead of 0 is replaced by that number in place of missing data 
+# print(df.fillna(method='pad')) #it puts the previous value
+# df.fillna(method='bfill')#it fills with backward value
+
 
 
 # dict = {'name':["aparna", "pankaj", "sudhir", "Geeku"],
@@ -85,3 +87,16 @@ print(df.fillna(method='pad')) #it puts the previous value
 
 # # Check for missing values using isna()
 # print(df.isna())
+
+
+data = {
+    'Name': ['Alice', 'Bob', 'Alice', 'Charlie', 'Bob', 'David'],
+    'Age': [25, 30, 25, 35, 30, 40],
+    'City': ['New York', 'Los Angeles', 'New York', 'Chicago', 'Los Angeles', 'San Francisco']
+}
+
+df = pd.DataFrame(data)
+print(df)
+
+duplicates = df.duplicated()
+print(duplicates)
