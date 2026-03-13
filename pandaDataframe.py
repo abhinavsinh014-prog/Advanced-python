@@ -53,12 +53,18 @@ import pandas as pd
 
 # print(df.fillna(0)) #any value you put here instead of 0 is replaced by that number in place of missing data 
 
-dict = {'name':["aparna", "pankaj", "sudhir", "Geeku"],
-        'degree': ["MBA", "BCA", "M.Tech", "MBA"],
-        'score':[90, 40, 80, 98]}
+# dict = {'name':["aparna", "pankaj", "sudhir", "Geeku"],
+#         'degree': ["MBA", "BCA", "M.Tech", "MBA"],
+#         'score':[90, 40, 80, 98]}
  
-df = pd.DataFrame(dict)
+# df = pd.DataFrame(dict)
 
-for i, j in df.iterrows():
-    print(i, j)
-    print()
+# for i, j in df.iterrows():               #Iterating Over Rows
+#     print(i, j)
+#     print()
+
+d = pd.read_csv("employees.csv")
+
+boll_series = pd.isnull(d["Gender"])
+missing_series= d[boll_series]
+print(missing_series)
