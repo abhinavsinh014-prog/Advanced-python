@@ -130,3 +130,5 @@ df.groupby(['Name', 'Qualification'])
 print(df.groupby(['Name', 'Qualification']).groups)
 
 print(df.groupby('Name')['Age'].sum())
+
+print(df.groupby(['Name'], sort=False)['Age'].sum())
