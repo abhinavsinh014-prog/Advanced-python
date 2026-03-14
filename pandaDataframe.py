@@ -122,3 +122,6 @@ print(df)
 
 df.groupby('Name')
 print(df.groupby('Name').groups)
+
+gk = df.groupby('Name') 
+print(gk.first())
