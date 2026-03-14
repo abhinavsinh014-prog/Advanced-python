@@ -89,17 +89,36 @@ import pandas as pd
 # print(df.isna())
 
 
-data = {
-    'Name': ['Alice', 'Bob', 'Alice', 'Charlie', 'Bob', 'David'],
-    'Age': [25, 30, 25, 35, 30, 40],
-    'City': ['New York', 'Los Angeles', 'New York', 'Chicago', 'Los Angeles', 'San Francisco']
-}
+# data = {
+#     'Name': ['Alice', 'Bob', 'Alice', 'Charlie', 'Bob', 'David'],
+#     'Age': [25, 30, 25, 35, 30, 40],
+#     'City': ['New York', 'Los Angeles', 'New York', 'Chicago', 'Los Angeles', 'San Francisco']
+# }
 
-df = pd.DataFrame(data)
+# df = pd.DataFrame(data)
+# print(df)
+
+# duplicates = df.duplicated()         # Using duplicated() Method
+# print(duplicates)
+
+# df_no_duplicates = df.drop_duplicates(subset = ["Name","City"])
+# print(df_no_duplicates)
+
+# df_keep_last = df.drop_duplicates(keep='last')
+# (df_keep_last)
+
+
+data1 = {'Name':['Jai', 'Anuj', 'Jai', 'Princi',
+                 'Gaurav', 'Anuj', 'Princi', 'Abhi'],
+        'Age':[27, 24, 22, 32,
+               33, 36, 27, 32],
+        'Address':['Nagpur', 'Kanpur', 'Allahabad', 'Kannuaj',
+                   'Jaunpur', 'Kanpur', 'Allahabad', 'Aligarh'],
+        'Qualification':['Msc', 'MA', 'MCA', 'Phd',
+                         'B.Tech', 'B.com', 'Msc', 'MA']}
+df = pd.DataFrame(data1)
 print(df)
 
-duplicates = df.duplicated()         # Using duplicated() Method
-print(duplicates)
 
-df_no_duplicates = df.drop_duplicates(subset = ["Name","City"])
-print(df_no_duplicates)
+df.groupby('Name')
+print(df.groupby('Name').groups)
