@@ -38,6 +38,9 @@ grp = df.groupby(['Name','Qualification'])
 
 print(grp.get_group(('Jai','Msc')))
 
+
+#Aggregation
+
 grp1 = df.groupby('Name')
 print(grp1['Age'].aggregate(np.sum))
 
@@ -47,3 +50,9 @@ print(grp2['Age'].aggregate(np.sum))
 
 grp3 = df.groupby('Name')
 print(grp3['Age'].agg([np.sum, np.mean, np.std]))
+
+#transformation
+
+grp4 = df.groupby('Name')
+sc = lambda x: (x - x.mean())/x.std()
+print(grp4['Age'].transform(sc))
