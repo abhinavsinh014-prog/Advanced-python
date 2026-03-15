@@ -56,3 +56,8 @@ print(grp3['Age'].agg([np.sum, np.mean, np.std]))
 grp4 = df.groupby('Name')
 sc = lambda x: (x - x.mean())/x.std()
 print(grp4['Age'].transform(sc))
+
+#filteration
+
+grp2 = df.groupby('Name')
+print(grp2.filter(lambda x: len(x) >= 2))
