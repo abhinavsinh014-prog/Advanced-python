@@ -134,7 +134,13 @@ print(df.groupby('Name')['Age'].sum())
 print(df.groupby(['Name'], sort=False)['Age'].sum())
 
 grp = df.groupby('Name')
-for name, group in grp:
-    print(name)
-    print(group)
-    print()
+# for name, group in grp:
+#     print(name)
+#     print(group)
+#     print()
+
+print(grp.get_group('Jai'))
+
+grp = df.groupby(['Name','Qualification'])
+print(grp.get_group(('Jai','Msc')))
+
