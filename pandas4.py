@@ -20,3 +20,6 @@ upper_bound = Q3 + 1.5 * IQR
 
 outliers = df[(df['Age'] < lower_bound) | (df['Age'] > upper_bound)]
 print("Outliers:\n",outliers)
+
+df_cleaned = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]
+print("Cleaned Data:\n", df_cleaned)
