@@ -23,3 +23,6 @@ print("Outliers:\n",outliers)
 
 df_cleaned = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]
 print("Cleaned Data:\n", df_cleaned)
+
+df['Age'] = np.where((df['Age'] < lower_bound) | (df['Age'] > upper_bound), df['Age'].median(), df['Age'])
+print("Data after Replacing Outliers:\n", df)
