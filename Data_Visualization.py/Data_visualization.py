@@ -30,11 +30,18 @@ import matplotlib.pyplot as plt
 # plt.ylabel("Frequency")
 # plt.show()
 
-x = ['john cena','randy orton','triple h','edge','the rock']
-y = [1700,1254,1104,1100,1998]
+# x = ['john cena','randy orton','triple h','edge','the rock']
+# y = [1700,1254,1104,1100,1998]
 
-plt.scatter(x,y)
-plt.title("world title")
-plt.xlabel("superstars")
-plt.ylabel("wins")
+# plt.scatter(x,y)
+# plt.title("world title")
+# plt.xlabel("superstars")
+# plt.ylabel("wins")
+# plt.show()
+
+stars = ['john cena','randy orton','triple h','edge','the rock']
+wins = [1700,1254,1104,1100,1998]
+
+plt.pie(wins,labels=stars)
+plt.title("wins")
 plt.show()
