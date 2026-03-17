@@ -12,11 +12,20 @@ import matplotlib.pyplot as plt
 # plt.xlabel('X-Axis')
 # plt.show()
 
-x = ['john cena','randy orton','triple h','edge','the rock']
-y = [17,14,14,11,10]
+# x = ['john cena','randy orton','triple h','edge','the rock']
+# y = [17,14,14,11,10]
 
-plt.bar(x,y)
-plt.title("world title")
-plt.xlabel("superstars")
-plt.ylabel("championship")
+# plt.bar(x,y)
+# plt.title("world title")
+# plt.xlabel("superstars")
+# plt.ylabel("championship")
+# plt.show()
+
+x = [7, 8, 9, 10, 10, 12, 12, 12, 13, 14, 14, 15, 16, 16, 17, 18, 18, 19, 20, 20,
+     21, 22, 23, 24, 25, 25, 26, 28, 30, 32, 35, 36, 38, 40, 42, 44, 48, 50]
+
+plt.hist(x, bins=10, color='steelblue')
+plt.title("Histogram")
+plt.xlabel("Total Bill")
+plt.ylabel("Frequency")
 plt.show()
