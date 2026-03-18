@@ -6,8 +6,9 @@ marks = {
 
 fg = pd.DataFrame(marks)
 
-plt.plot(fg['marks'],color='red',marker='p',linestyle=':')
+plt.plot(fg['marks'],color='red',marker='p',linestyle='-',linewidth = '2')
 plt.title("line chart")
 plt.ylabel('Y-Axis')
 plt.xlabel('X-Axis')
+plt.grid()
 plt.show()
