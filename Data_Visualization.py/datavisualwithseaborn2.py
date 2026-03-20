@@ -12,14 +12,22 @@ import matplotlib.pyplot as plt
 # plt.legend()
 # plt.show()
 
-#How to Customize Seaborn Plots with Python?
+##How to Customize Seaborn Plots with Python?
 
-#Adding Titles and Axis Labels
+##Adding Titles and Axis Labels
 
-iris = sns.load_dataset('iris')
-sns.scatterplot(x='sepal_length', y='sepal_width', data=iris)
+# iris = sns.load_dataset('iris')
+# sns.scatterplot(x='sepal_length', y='sepal_width', data=iris)
 
-plt.title('Sepal Length vs Sepal Width')
-plt.xlabel('Sepal Length (cm)')
-plt.ylabel('Sepal Width (cm)')
+# plt.title('Sepal Length vs Sepal Width')
+# plt.xlabel('Sepal Length (cm)')
+# plt.ylabel('Sepal Width (cm)')
+# plt.show()
+
+##Built-in Styles and Grids in Seaborn
+
+sns.set_style("whitegrid")
+
+sns.boxplot(x='species', y='petal_length', data=sns.load_dataset('iris'),color = 'red')
+plt.title('Petal Length Distribution by Species')
 plt.show()
