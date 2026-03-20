@@ -41,9 +41,16 @@ import matplotlib.pyplot as plt
 # plt.show()
 
 ##Using custom plate
-custom_colors = ['#FF5733', '#33FFBD', '#335BFF']
-sns.set_palette(custom_colors)
+# custom_colors = ['#FF5733', '#33FFBD', '#335BFF']
+# sns.set_palette(custom_colors)
 
-sns.violinplot(x='species', y='petal_length', data=sns.load_dataset('iris'))
-plt.title('Custom Colored Petal Length Distribution')
+# sns.violinplot(x='species', y='petal_length', data=sns.load_dataset('iris'))
+# plt.title('Custom Colored Petal Length Distribution')
+# plt.show()
+
+##Adjusting Figure Size and Aspect Ratio
+plt.figure(figsize=(10, 6))
+
+sns.lineplot(x='year', y='passengers', data=sns.load_dataset('flights'))
+plt.title('Number of Passengers Over Time')
 plt.show()
