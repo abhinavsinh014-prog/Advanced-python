@@ -26,8 +26,16 @@ import matplotlib.pyplot as plt
 
 ##Built-in Styles and Grids in Seaborn
 
-sns.set_style("whitegrid")
+# sns.set_style("whitegrid")
 
-sns.boxplot(x='species', y='petal_length', data=sns.load_dataset('iris'),color = 'red')
+# sns.boxplot(x='species', y='petal_length', data=sns.load_dataset('iris'),color = 'red')
+# plt.title('Petal Length Distribution by Species')
+# plt.show()
+
+##Customizing Color Palettes
+
+sns.set_palette("pastel") 
+
+sns.violinplot(x='species', y='petal_length', data=sns.load_dataset('iris'),color ='green')
 plt.title('Petal Length Distribution by Species')
 plt.show()
