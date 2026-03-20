@@ -34,8 +34,16 @@ import matplotlib.pyplot as plt
 
 ##Customizing Color Palettes
 
-sns.set_palette("pastel") 
+# sns.set_palette("pastel") 
 
-sns.violinplot(x='species', y='petal_length', data=sns.load_dataset('iris'),color ='green')
-plt.title('Petal Length Distribution by Species')
+# sns.violinplot(x='species', y='petal_length', data=sns.load_dataset('iris'),color ='green')
+# plt.title('Petal Length Distribution by Species')
+# plt.show()
+
+##Using custom plate
+custom_colors = ['#FF5733', '#33FFBD', '#335BFF']
+sns.set_palette(custom_colors)
+
+sns.violinplot(x='species', y='petal_length', data=sns.load_dataset('iris'))
+plt.title('Custom Colored Petal Length Distribution')
 plt.show()
