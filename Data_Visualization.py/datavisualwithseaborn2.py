@@ -14,15 +14,15 @@ import matplotlib.pyplot as plt
 
 ##How to Customize Seaborn Plots with Python?
 
-##Adding Titles and Axis Labels
+#Adding Titles and Axis Labels
 
-# iris = sns.load_dataset('iris')
-# sns.scatterplot(x='sepal_length', y='sepal_width', data=iris)
+iris = sns.load_dataset('iris')
+sns.scatterplot(x='sepal_length', y='sepal_width', data=iris,color='yellow')
 
-# plt.title('Sepal Length vs Sepal Width')
-# plt.xlabel('Sepal Length (cm)')
-# plt.ylabel('Sepal Width (cm)')
-# plt.show()
+plt.title('Sepal Length vs Sepal Width')
+plt.xlabel('Sepal Length (cm)')
+plt.ylabel('Sepal Width (cm)')
+plt.show()
 
 ##Built-in Styles and Grids in Seaborn
 
@@ -51,8 +51,8 @@ import matplotlib.pyplot as plt
 ##Adjusting Figure Size and Aspect Ratio
 # plt.figure(figsize=(10, 6))
 
-sns.lineplot(x='year', y='passengers', data=sns.load_dataset('flights'),marker = 'o',color = 'green')
-plt.title('Number of Passengers Over Time')
-plt.show()
+# sns.lineplot(x='year', y='passengers', data=sns.load_dataset('flights'),marker = 'o',color = 'green')
+# plt.title('Number of Passengers Over Time')
+# plt.show()
 
 
