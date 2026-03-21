@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 #Adding Titles and Axis Labels
 
 iris = sns.load_dataset('iris')
-sns.scatterplot(x='sepal_length', y='sepal_width', data=iris,color='yellow')
+sns.scatterplot(x='sepal_length', y='sepal_width', data=iris,color='brown')
 
 plt.title('Sepal Length vs Sepal Width')
 plt.xlabel('Sepal Length (cm)')
