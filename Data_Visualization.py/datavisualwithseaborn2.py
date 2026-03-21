@@ -51,7 +51,7 @@ import matplotlib.pyplot as plt
 ##Adjusting Figure Size and Aspect Ratio
 # plt.figure(figsize=(10, 6))
 
-sns.lineplot(x='year', y='passengers', data=sns.load_dataset('flights'),marker = 'o',color = 'red')
+sns.lineplot(x='year', y='passengers', data=sns.load_dataset('flights'),marker = 'o',color = 'green')
 plt.title('Number of Passengers Over Time')
 plt.show()
 
