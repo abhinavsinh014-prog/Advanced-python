@@ -12,5 +12,5 @@ print(penguins)
 print(penguins["species"].value_counts())
 print(penguins["island"].value_counts())
 
-sns.scatterplot(data=penguins,x="flipper_length_mm",y="body_mass_g")
+sns.scatterplot(data=penguins,x="flipper_length_mm",y="body_mass_g",hue = "island")
 plt.show()
