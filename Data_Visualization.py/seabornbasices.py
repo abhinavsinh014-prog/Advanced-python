@@ -24,6 +24,9 @@ print(penguins["island"].value_counts())
 # sns.stripplot(data=penguins,x="species",y="body_mass_g",hue = "island",dodge=True,jitter=True)
 # plt.show()
 
-sns.swarmplot(data=penguins,x="species",y="body_mass_g",hue = "island")
-sns.despine()
+# sns.swarmplot(data=penguins,x="species",y="body_mass_g",hue = "island")
+# sns.despine()
+# plt.show()
+
+sns.histplot(data=penguins,x="body_mass_g",hue = 'sex',multiple = "stack")
 plt.show()
