@@ -31,5 +31,8 @@ print(penguins["island"].value_counts())
 # sns.histplot(data=penguins,x="body_mass_g",hue = 'sex',multiple = "stack")
 # plt.show()
 
-sns.regplot(data=penguins,x="body_mass_g",y='flipper_length_mm',color='red')
+sns.regplot(data=penguins,x="body_mass_g",y='flipper_length_mm',color='red',scatter=False)
+plt.show()
+
+sns.lineplot(data=penguins,x="body_mass_g",y='flipper_length_mm',color='red')
 plt.show()
