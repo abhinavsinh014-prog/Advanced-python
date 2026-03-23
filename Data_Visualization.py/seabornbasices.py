@@ -34,5 +34,8 @@ print(penguins["island"].value_counts())
 # sns.regplot(data=penguins,x="body_mass_g",y='flipper_length_mm',color='red',scatter=False)
 # plt.show()
 
-sns.lineplot(data=penguins,x="body_mass_g",y='flipper_length_mm',color='red',hue='island',style='sex')
+# sns.lineplot(data=penguins,x="body_mass_g",y='flipper_length_mm',color='red',hue='island',style='sex')
+# plt.show()
+
+sns.jointplot(data=penguins,x="body_mass_g",y='flipper_length_mm',hue='sex')
 plt.show()
