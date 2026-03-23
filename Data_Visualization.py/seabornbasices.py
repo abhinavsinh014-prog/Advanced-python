@@ -37,5 +37,8 @@ print(penguins["island"].value_counts())
 # sns.lineplot(data=penguins,x="body_mass_g",y='flipper_length_mm',color='red',hue='island',style='sex')
 # plt.show()
 
-sns.jointplot(data=penguins,x="body_mass_g",y='flipper_length_mm',hue='sex',kind='kde')
+# sns.jointplot(data=penguins,x="body_mass_g",y='flipper_length_mm',hue='sex',kind='scatter')
+# plt.show()
+
+sns.barplot(data=penguins,x="species",y='body_mass_g',hue='sex',palette=['pink','blue'])
 plt.show()
