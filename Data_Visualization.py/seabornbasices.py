@@ -43,5 +43,8 @@ print(penguins["island"].value_counts())
 # sns.barplot(data=penguins,x="species",y='body_mass_g',hue='sex',palette=['pink','blue'],estimator=np.sum)
 # plt.show()
 
-sns.countplot(data=penguins,x="species",hue='island',palette='Set1')
+# sns.countplot(data=penguins,x="species",hue='island',palette='Set1')
+# plt.show()
+
+sns.boxplot(data=penguins,x="species",y="body_mass_g")
 plt.show()
