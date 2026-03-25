@@ -52,5 +52,9 @@ print(penguins["island"].value_counts())
 # sns.violinplot(data=penguins,x="species",y="body_mass_g",hue='sex',split = True)
 # plt.show()
 
-sns.kdeplot(data=penguins,x="body_mass_g",hue="species",palette="pastel",fill =True)
+# sns.kdeplot(data=penguins,x="body_mass_g",hue="species",palette="pastel",fill =True)
+# plt.show()
+
+colums = ["bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g"]
+sns.heatmap(data=penguins[colums].corr(),annot=True,cmap="coolwarm")
 plt.show()
