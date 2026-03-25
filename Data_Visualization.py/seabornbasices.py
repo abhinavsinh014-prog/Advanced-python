@@ -56,5 +56,5 @@ print(penguins["island"].value_counts())
 # plt.show()
 
 colums = ["bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g"]
-sns.heatmap(data=penguins[colums].corr(),annot=True,cmap="Blues",vmin=-0.2)
+sns.heatmap(data=penguins[colums].corr(),annot=True,cmap="Blues",vmin=-0.2,linewidths="2")
 plt.show()
