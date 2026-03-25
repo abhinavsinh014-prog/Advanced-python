@@ -52,5 +52,5 @@ print(penguins["island"].value_counts())
 # sns.violinplot(data=penguins,x="species",y="body_mass_g",hue='sex',split = True)
 # plt.show()
 
-sns.kdeplot(data=penguins,x="body_mass_g",hue="species")
+sns.kdeplot(data=penguins,x="body_mass_g",hue="species",palette="pastel",fill =True)
 plt.show()
