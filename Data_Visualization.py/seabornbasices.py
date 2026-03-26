@@ -55,6 +55,9 @@ print(penguins["island"].value_counts())
 # sns.kdeplot(data=penguins,x="body_mass_g",hue="species",palette="pastel",fill =True)
 # plt.show()
 
-colums = ["bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g"]
-sns.heatmap(data=penguins[colums].corr(),annot=True,cmap="Reds",vmin=-0.2,linewidths="2",linecolor="black")
+# colums = ["bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g"]
+# sns.heatmap(data=penguins[colums].corr(),annot=True,cmap="Reds",vmin=-0.2,linewidths="2",linecolor="black")
+# plt.show()
+
+sns.rugplot(data=penguins,x="body_mass_g",hue="species",palette="pastel",height=2)
 plt.show()
