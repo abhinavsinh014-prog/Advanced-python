@@ -62,5 +62,5 @@ print(penguins["island"].value_counts())
 # sns.rugplot(data=penguins,y="body_mass_g",hue="species",palette="pastel",height=0.5)
 # plt.show()
 
-sns.pairplot(data=penguins)
+sns.pairplot(data=penguins,hue='sex',palette="Set1")
 plt.show()
