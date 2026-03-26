@@ -62,5 +62,10 @@ print(penguins["island"].value_counts())
 # sns.rugplot(data=penguins,y="body_mass_g",hue="species",palette="pastel",height=0.5)
 # plt.show()
 
-sns.pairplot(data=penguins,hue='sex',palette="Set1",diag_kind="hist")
+# sns.pairplot(data=penguins,hue='sex',palette="Set1",diag_kind="hist")
+# plt.show()
+
+graph = sns.PairGrid(data=penguins,hue="sex")
+graph.map_upper(sns.kdeplot)
+graph.map_diag(sns.histplot)
 plt.show()
