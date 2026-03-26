@@ -59,5 +59,8 @@ print(penguins["island"].value_counts())
 # sns.heatmap(data=penguins[colums].corr(),annot=True,cmap="Reds",vmin=-0.2,linewidths="2",linecolor="black")
 # plt.show()
 
-sns.rugplot(data=penguins,x="body_mass_g",hue="species",palette="pastel",height=2)
+# sns.rugplot(data=penguins,y="body_mass_g",hue="species",palette="pastel",height=0.5)
+# plt.show()
+
+sns.pairplot(data=penguins)
 plt.show()
