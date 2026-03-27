@@ -31,11 +31,11 @@ sns.set_context("paper")
 # sns.histplot(data=penguins,x="body_mass_g",hue = 'sex',multiple = "stack")
 # plt.show()
 
-sns.regplot(data=penguins,x="body_mass_g",y='flipper_length_mm',color='red',scatter=False)
-plt.show()
-
-# sns.lineplot(data=penguins,x="body_mass_g",y='flipper_length_mm',color='red',hue='island',style='sex')
+# sns.regplot(data=penguins,x="body_mass_g",y='flipper_length_mm',color='red',scatter=False)
 # plt.show()
+
+sns.lineplot(data=penguins,x="body_mass_g",y='flipper_length_mm',color='red',hue='island',style='sex')
+plt.show()
 
 # sns.jointplot(data=penguins,x="body_mass_g",y='flipper_length_mm',hue='sex',kind='scatter')
 # plt.show()
