@@ -21,12 +21,12 @@ sns.set_context("paper")
 # sns.scatterplot(data=penguins,x="species",y="body_mass_g",hue = "island",style = 'sex',palette = "Set1",alpha = 0.5)
 # plt.show()
 
-sns.stripplot(data=penguins,x="species",y="body_mass_g",hue = "island",dodge=True,jitter=True)
-plt.show()
-
-# sns.swarmplot(data=penguins,x="species",y="body_mass_g",hue = "island")
-# sns.despine()
+# sns.stripplot(data=penguins,x="species",y="body_mass_g",hue = "island",dodge=True,jitter=True)
 # plt.show()
+
+sns.swarmplot(data=penguins,x="species",y="body_mass_g",hue = "island")
+sns.despine()
+plt.show()
 
 # sns.histplot(data=penguins,x="body_mass_g",hue = 'sex',multiple = "stack")
 # plt.show()
