@@ -1,14 +1,17 @@
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 
 run = {
     "player" :["Kohli","Rohit","Warner","Smith","Root"],
-    "100s in 2016" : [7,5,7,4,4],
-    "100s in 2017" : [11,7,5,6,4],
-    "100s in 2018" : [11,8,0,0,5],
-    "100s in 2019" : [7,10,7,4,4]
+    "centuries" : [81,49,49,44,59],
+    "Runs" : [30,10,26,38,41],
+    "100s in 2018" : [54,32,22,12,18],
+    "100s in 2019" : [9,9,8,6,4]
 }
 
 ff  = pd.DataFrame(run)
 
-print(ff)
+sns.kdeplot(data= ff, x="Runs",y = "centuries")
+plt.show()
