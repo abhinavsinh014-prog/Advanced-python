@@ -1,3 +1,6 @@
+import pandas as pd
+
+
 run = {
     "player" :["Kohli","Rohit","Warner","Smith","Root"],
     "100s in 2016" : [7,5,7,4,4],
@@ -6,3 +9,6 @@ run = {
     "100s in 2019" : [7,10,7,4,4]
 }
 
+ff  = pd.DataFrame(run)
+
+print(ff)
