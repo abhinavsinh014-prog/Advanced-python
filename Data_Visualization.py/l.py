@@ -13,5 +13,5 @@ run = {
 
 ff  = pd.DataFrame(run)
 
-sns.kdeplot(data= ff, x="Runs",y = "centuries")
+sns.barplot(data= ff, x="player",y="centuries")
 plt.show()

@@ -34,8 +34,8 @@ sns.set_context("paper")
 # sns.regplot(data=penguins,x="body_mass_g",y='flipper_length_mm',color='red',scatter=False)
 # plt.show()
 
-sns.lineplot(data=penguins,x="body_mass_g",y='flipper_length_mm',color='red',hue='island',style='sex')
-plt.show()
+# sns.lineplot(data=penguins,x="body_mass_g",y='flipper_length_mm',color='red',hue='island',style='sex')
+# plt.show()
 
 # sns.jointplot(data=penguins,x="body_mass_g",y='flipper_length_mm',hue='sex',kind='scatter')
 # plt.show()
@@ -52,8 +52,8 @@ plt.show()
 # sns.violinplot(data=penguins,x="species",y="body_mass_g",hue='sex',split = True)
 # plt.show()
 
-# sns.kdeplot(data=penguins,x="body_mass_g",hue="species",palette="pastel",fill =True)
-# plt.show()
+sns.kdeplot(data=penguins,x="body_mass_g",hue="species",palette="pastel",fill =True)
+plt.show()
 
 # colums = ["bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g"]
 # sns.heatmap(data=penguins[colums].corr(),annot=True,cmap="Reds",vmin=-0.2,linewidths="2",linecolor="black")
