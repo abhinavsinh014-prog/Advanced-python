@@ -52,7 +52,7 @@ sns.set_context("paper")
 # sns.violinplot(data=penguins,x="species",y="body_mass_g",hue='sex',split = True)
 # plt.show()
 
-sns.kdeplot(data=penguins,x="body_mass_g",hue="species",palette="Set2",fill=True)
+sns.kdeplot(data=penguins,x="body_mass_g",hue="species",palette="Set3",fill=True)
 plt.show()
 
 # colums = ["bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g"]
