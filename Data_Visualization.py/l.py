@@ -12,7 +12,7 @@ run = {
 }
 
 ff  = pd.DataFrame(run)
-
+sns.set_style('white')
 sns.kdeplot(data=ff,x="centuries",color='red',fill=True)
 plt.show()
 
