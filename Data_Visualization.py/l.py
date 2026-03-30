@@ -13,6 +13,6 @@ run = {
 
 ff  = pd.DataFrame(run)
 
-sns.kdeplot(data=ff,x="centuries",color='red')
+sns.kdeplot(data=ff,x="centuries",color='red',fill=True)
 plt.show()
 
