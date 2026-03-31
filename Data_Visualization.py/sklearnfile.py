@@ -35,3 +35,5 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
 classifier = MostFrequentClassClassifier()
 classifier.fit(X_train, y_train)
 
+predictions = classifier.predict(X_test)
+print(f"Predicted class for all test instances: {predictions[0]}")
