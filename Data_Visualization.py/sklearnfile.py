@@ -37,3 +37,5 @@ classifier.fit(X_train, y_train)
 
 predictions = classifier.predict(X_test)
 print(f"Predicted class for all test instances: {predictions[0]}")
+
+print(classifier.most_frequent_)
