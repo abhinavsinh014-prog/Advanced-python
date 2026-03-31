@@ -16,3 +16,9 @@ class MostFrequentClassClassifier(BaseEstimator, ClassifierMixin):
         self.most_frequent_ = unique_classes[np.argmax(counts)]
 
         return self    
+    
+    def predict(self, X):
+        if self.most_frequent_ is None:
+            raise ValueError("This classifier instance is not fitted yet.")
+        
+        return np.full(shape=(X.shape[0],), fill_value=self.most_frequent_)
