@@ -11,3 +11,4 @@ mod.fit(X,y)
 pred = mod.predict(X)
 
 plt.scatter(pred,y)
+plt.show()
