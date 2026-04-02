@@ -52,15 +52,15 @@ sns.set_context("paper")
 # sns.violinplot(data=penguins,x="species",y="body_mass_g",hue='sex',split = True)
 # plt.show()
 
-sns.kdeplot(data=penguins,x="flipper_length_mm",hue="species",palette="Set1",fill=True)
-plt.show()
+# sns.kdeplot(data=penguins,x="flipper_length_mm",hue="species",palette="Set1",fill=True)
+# plt.show()
 
 # colums = ["bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g"]
 # sns.heatmap(data=penguins[colums].corr(),annot=True,cmap="Reds",vmin=-0.2,linewidths="2",linecolor="black")
 # plt.show()
 
-# sns.rugplot(data=penguins,y="body_mass_g",hue="species",palette="pastel",height=0.5)
-# plt.show()
+sns.rugplot(data=penguins,y="flipper_length_mm",hue="species",palette="pastel",height=0.5)
+plt.show()
 
 # sns.pairplot(data=penguins,hue='sex',palette="Set1",diag_kind="hist")
 # plt.show()
