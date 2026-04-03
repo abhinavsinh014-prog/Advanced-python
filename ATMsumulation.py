@@ -8,7 +8,7 @@ bank = {
     "mohit"  : {"balance":28879, "PIN":4567}
 }
 running = True
-print("======= AURA BANK ATM =======")
+print("======= AURA FARMER BANK ATM =======")
 
 while running :
     todo = input("Want to open new account or already have account (old/new/exit):-").lower().strip()
