@@ -12,6 +12,7 @@ run = {
 }
 
 ff  = pd.DataFrame(run)
+print(ff)
 sns.set_style('white')
 sns.kdeplot(data=ff,x="centuries",color='red',fill=True)
 sns.despine()
