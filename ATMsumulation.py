@@ -1,14 +1,14 @@
 bank = { 
     "aditi" : {"balance":95454, "PIN":1234},
     "naman" : {"balance":89878, "PIN":5678},
-    "randy" : {"balance":65256, "PIN":9012},
+    "randy" : {"balance":652525, "PIN":9012},
     "john"  : {"balance":31218, "PIN":3456},
     "pandat" : {"balance":31982, "PIN":7890},
     "gadariya":{"balance":56512, "PIN":2345},
     "mohit"  : {"balance":28879, "PIN":4567}
 }
 running = True
-print("======= CHINGI BANK ATM =======")
+print("======= PUSSY BANK ATM =======")
 
 while running :
     todo = input("Want to open new account or already have account (old/new/exit):-").lower().strip()
