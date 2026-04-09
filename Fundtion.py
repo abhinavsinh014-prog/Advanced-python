@@ -1,5 +1,6 @@
 def intro():
-    print("Welcome to the Python programming world!")
+    return "Welcome to the Python programming world!"
 
 
-intro()
+msd = intro()
+print(msd)
