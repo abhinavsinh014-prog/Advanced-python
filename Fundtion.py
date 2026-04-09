@@ -15,3 +15,8 @@ def odd_even(list1):
         else:
             odd.append(num)
     return odd, even
+
+
+num1, num2 = odd_even([31,45,18,17,7,10,56,4,36,89,25,12,77,333])
+print("Odd numbers:", num1)
+print("Even numbers:", num2)
