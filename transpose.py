@@ -10,4 +10,4 @@ for i in range(n):
             matrix[j][i] = matrix[i][j]
             matrix[i][j] = kat 
 for i in range(n):
-    print(matrix[i])
+    print(matrix[i]) #hai

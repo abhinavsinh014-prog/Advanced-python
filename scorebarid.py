@@ -41,7 +41,8 @@ def toss():
 def play_innings(overs, target=None):
     score = 0
     wickets = 0
-
+    striker = team_A["player_1"]
+    non_striker = team_A["player_2"]
     for over in range(overs):
         for ball in range(1, 7):
 

@@ -120,4 +120,4 @@ def main():
     else:
       print("not avilble")
 
-main() # Added call to main function
+main() # Added call to main functionEXIT

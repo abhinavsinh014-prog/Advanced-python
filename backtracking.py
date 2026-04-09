@@ -17,7 +17,7 @@ class Solution:
         return result
 
 
-# Testing
+
 nums = [1, 2, 3]
 sol = Solution()
 print(sol.permute(nums))
