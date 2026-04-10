@@ -27,3 +27,7 @@ def van(name,wins):
 
 nms = van("John cena",17)
 print(nms)
+
+def jain(*args,**kwargs):
+    print("Positional arguments:", args)
+    print("Keyword arguments:", kwargs)
