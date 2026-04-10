@@ -23,3 +23,6 @@
 
 def van(name,wins):
     return f"{name} has won {wins} times championship."
+
+
+print(van("John cena",17))
