@@ -36,3 +36,5 @@ jain(1, 2, 3, name="Klaus", age=1000)
 
 lst = list([1,2,3])
 dict = dict(name="Klaus", age=1000)
+
+jain(lst,dict)
