@@ -31,3 +31,5 @@ print(nms)
 def jain(*args,**kwargs):
     print("Positional arguments:", args)
     print("Keyword arguments:", kwargs)
+
+jain(1, 2, 3, name="Klaus", age=1000)
