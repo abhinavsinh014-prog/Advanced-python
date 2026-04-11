@@ -6,3 +6,4 @@ class car:
 
 car1 = car(4,4,"disel")
 print("Car 1 has {} windows, {} tyres and {} engine.".format(car1.windows,car1.tyres,car1.engine))
+print(f"Car 1 has {car1.windows} windows, {car1.tyres} tyres and {car1.engine} engine.")
