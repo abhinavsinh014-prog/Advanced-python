@@ -6,3 +6,5 @@ class car:
 
 car1 = car(4,4,"disel")
 print(car1.windows)
+print(car1.tyres)
+print(car1.engine)
