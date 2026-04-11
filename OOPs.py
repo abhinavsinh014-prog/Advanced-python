@@ -3,3 +3,6 @@ class car:
         self.windows=windows
         self.tyres=tyres
         self.engine=engine
+
+car1 = car(4,4,"disel")
+print(car1.windows)
