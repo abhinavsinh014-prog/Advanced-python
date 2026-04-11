@@ -5,6 +5,4 @@ class car:
         self.engine=engine
 
 car1 = car(4,4,"disel")
-print(car1.windows)
-print(car1.tyres)
-print(car1.engine)
+print("Car 1 has {} windows, {} tyres and {} engine.".format(car1.windows,car1.tyres,car1.engine))
