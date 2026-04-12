@@ -23,11 +23,17 @@ class animal:
         elif len(args)==2:
             self.name=args[0]
             self.legs=args[1]
-        
+        elif len(args)==2:
+            self.name=args[0]
+            self.legs=args[1]
+        elif len(args)==3:
+            self.name=args[0]
+            self.legs=args[1]
+            self.sound=args[2]
 
 
     def make_sound(self):
-        print("{} makes {} a sound".format(self.name, self.legs))
+        print("{} makes {} a sound".format(self.name, self.legs, self.sound))
 
-animal1 = animal("Dog", 4)
+animal1 = animal("Dog", 4, "bark")
 animal1.make_sound()
