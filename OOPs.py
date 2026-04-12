@@ -20,11 +20,14 @@ class animal:
     def __init__(self,*args):
         if len(args)==1:
             self.name=args[0]
+        elif len(args)==2:
+            self.name=args[0]
+            self.legs=args[1]
         
 
 
     def make_sound(self):
-        print("{} makes a sound".format(self.name))
+        print("{} makes {} a sound".format(self.name, self.legs))
 
-animal1 = animal("Dog")
+animal1 = animal("Dog", 4)
 animal1.make_sound()
