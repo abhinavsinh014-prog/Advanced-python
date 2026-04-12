@@ -1,3 +1,6 @@
+from os import name
+
+
 class car:
     def __init__(self,windows,tyres,engine):
         self.windows=windows
@@ -14,14 +17,14 @@ class car:
 
 
 class animal:
-    def __init__(self,name,legs,sound):
-        self.name=name
-        self.legs=legs
-        self.sound=sound
+    def __init__(self,*args):
+        if len(args)==1:
+            self.name=args[0]
+        
 
 
     def make_sound(self):
-        print("{} makes a {} sound".format(self.name,self.sound))
+        print("{} makes a sound".format(self.name))
 
-animal1 = animal("Dog",4,"bark")
+animal1 = animal("Dog")
 animal1.make_sound()
