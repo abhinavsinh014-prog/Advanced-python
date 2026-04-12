@@ -7,7 +7,21 @@ class car:
     def drive(self):
         print("Car have a {} engine".format(self.engine))
 
-car1 = car(4,4,"disel")
-print("Car has {} windows, {} tyres and {} engine.".format(car1.windows,car1.tyres,car1.engine))
-print(f"Car has {car1.windows} windows, {car1.tyres} tyres and {car1.engine} engine.")
-car1.drive()
+# car1 = car(4,4,"disel")
+# print("Car has {} windows, {} tyres and {} engine.".format(car1.windows,car1.tyres,car1.engine))
+# print(f"Car has {car1.windows} windows, {car1.tyres} tyres and {car1.engine} engine.")
+# car1.drive()
+
+
+class animal:
+    def __init__(self,name,legs,sound):
+        self.name=name
+        self.legs=legs
+        self.sound=sound
+
+
+    def make_sound(self):
+        print("{} makes a {} sound".format(self.name,self.sound))
+
+animal1 = animal("Dog",4,"bark")
+animal1.make_sound()
