@@ -65,5 +65,5 @@ print(audi1.tyres)
 audi1.drive()
 
 car1 = Car(4,4,"disel")
-print(car1)
-print(audi1)
+print(dir(car1))
+print(dir(audi1))
