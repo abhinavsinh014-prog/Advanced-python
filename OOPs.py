@@ -50,3 +50,8 @@ class Car:
 
     def drive(self):
         print("Car have a engine")
+
+class Audi(Car):
+    def __init__(self, windows, tyres, engine,speed):
+        super().__init__(windows, tyres, engine)
+        self.speed=speed
