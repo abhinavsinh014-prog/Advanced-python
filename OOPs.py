@@ -39,5 +39,14 @@ class animal:
     def make_sound(self):
         print("{} makes {} a sound".format(self.name, self.legs, self.sound))
 
-animal1 = animal()
-animal1.make_sound()
+# animal1 = animal()
+# animal1.make_sound()
+
+class Car:
+    def __init__(self,windows,tyres,engine):
+        self.windows=windows
+        self.tyres=tyres
+        self.engine=engine
+
+    def drive(self):
+        print("Car have a engine")
