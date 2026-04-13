@@ -60,3 +60,6 @@ audi1 = Audi(4,4,"disel",200)
 
 print(audi1.windows)
 print(audi1.tyres)
+
+
+audi1.drive()
