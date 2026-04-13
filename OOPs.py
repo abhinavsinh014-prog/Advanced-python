@@ -56,14 +56,18 @@ class Audi(Car):
         super().__init__(windows, tyres, engine)
         self.speed=speed
 
+    def self_drive(self):
+        print("Audi have a self drive feature")
+
 audi1 = Audi(4,4,"disel",200)
 
-print(audi1.windows)
-print(audi1.tyres)
+# print(audi1.windows)
+# print(audi1.tyres)
 
 
 audi1.drive()
+audi1.self_drive()
 
 car1 = Car(4,4,"disel")
-print(dir(car1))
-print(dir(audi1))
+# print(dir(car1))
+# print(dir(audi1))
