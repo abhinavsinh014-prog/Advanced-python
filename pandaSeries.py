@@ -40,10 +40,10 @@ df_mult = df2.mul(df1)
 print(df_mult)                           #multiplication
 print()
 
-df_div = df1.div(df2)
+df_div = df2.div(df1)
 print(df_div)                            #division
 print()
 
-de = pd.Series([1,3,5,7,8])
+de = pd.Series([1,3,5,7,8,19622])
 de = de.astype(float)
 print(de)
