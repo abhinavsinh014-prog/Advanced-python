@@ -6,3 +6,5 @@ data = {
 }
 input_name = input("Enter the name of the wrestler: ")
 if input_name in data:
+    print(f"{input_name} has a user code of {data[input_name]}.")
+else:    print(f"{input_name} is not in the data.")
