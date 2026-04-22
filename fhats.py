@@ -6,4 +6,4 @@ print("Aura addition:\n",dd)
 
 c = 45
 d = 56
-print(c+d)
+print(c-d)
