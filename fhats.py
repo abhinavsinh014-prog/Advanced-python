@@ -6,5 +6,4 @@ print("Aura addition:\n",dd)
 
 b = 45
 n = "45"
-print("Type of b:",type(b))
-print("Type of n:",type(n))
+print(b+int(n))
