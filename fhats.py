@@ -6,4 +6,4 @@ print("Aura addition:\n",dd)
 
 b = 45
 n = "45"
-print(b+45*3/int(n)))
+print(b+135*3/int(n))
