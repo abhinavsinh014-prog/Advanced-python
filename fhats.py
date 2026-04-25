@@ -10,6 +10,6 @@
 lab = ['p','o','w','e','r','r','a','n','g','e','r']
 for i in range(len(lab)):
     if i%2==0:
-        print(lab[i])
+        print(lab[i],end="")
     else:        
-        print(lab[i].upper())
+        print(lab[i].upper(),end="")
