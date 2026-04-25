@@ -7,6 +7,6 @@
 # b = 45
 # n = "45"
 # print(b+135*3/int(n))
-lab = ['p','o','w','e','r']
+lab = ['p','o','w','e','r','r','a','n','g','e','r']
 for i in lab:
     print(i)
