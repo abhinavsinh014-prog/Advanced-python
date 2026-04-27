@@ -15,4 +15,6 @@ def calculate_total_cost(fruit_dict, price_dict):
 if __name__ == "__main__":
     total_fruits = add_fruits(add)
     print(f"Total fruits: {total_fruits}")
-
+    total_cost = calculate_total_cost(add, shop)
+    print(f"Total cost: ${total_cost:.2f}")
+    
