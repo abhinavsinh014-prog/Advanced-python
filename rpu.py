@@ -13,9 +13,17 @@ def calculate_total_cost(fruit_dict, price_dict):
         total += quantity * price_dict.get(fruit, 0)
     return total
 
+def check_expiry(fruit_dict, expiry_dict):
+    expired_fruits = []
+    for fruit, expiry_date in expiry_dict.items():
+        if expiry_date < "2024-07-01":
+            expired_fruits.append(fruit)
+    return expired_fruits
 if __name__ == "__main__":
     total_fruits = add_fruits(quantity)
     print(f"Total fruits: {total_fruits}")
     total_cost = calculate_total_cost(quantity, price)
     print(f"Total cost: ${total_cost:.2f}")
+    expired = check_expiry(quantity, expiry)
+    print(f"Expired fruits: {expired}")
     
