@@ -12,3 +12,6 @@ df = pd.DataFrame(data)
 df["Marks"].mean()
 
 df[(df["Marks"] > 88) & (df["Attendance"] > 90)]
+
+df["Result"] = df["Marks"] > 75
+print(df)
