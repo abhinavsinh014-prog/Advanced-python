@@ -10,3 +10,5 @@ import pandas as pd
 df = pd.DataFrame(data)
 
 df["Marks"].mean()
+
+df[(df["Marks"] > 88) & (df["Attendance"] > 90)]
