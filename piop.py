@@ -5,3 +5,6 @@ data = {
     "Marks": [85, 78, 92, 88, 67, 95, 73, 80],
     "Attendance": [90, 85, 95, 88, 70, 96, 75, 82]
 }
+
+import pandas as pd
+df = pd.DataFrame(data)
