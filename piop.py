@@ -8,3 +8,5 @@ data = {
 
 import pandas as pd
 df = pd.DataFrame(data)
+
+df["Marks"].mean()
