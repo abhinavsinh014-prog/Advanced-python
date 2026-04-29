@@ -16,14 +16,27 @@ for num in arr:
 print("Duplicates:", duplicates)
 
 # calculator.py
-a = float(input("Enter first number: "))
-b = float(input("Enter second number: "))
+# a = float(input("Enter first number: "))
+# b = float(input("Enter second number: "))
 
-print("Addition:", a + b)
-print("Subtraction:", a - b)
-print("Multiplication:", a * b)
+# print("Addition:", a + b)
+# print("Subtraction:", a - b)
+# print("Multiplication:", a * b)
 
-if b != 0:
-    print("Division:", a / b)
-else:
-    print("Division by zero not allowed")
+# if b != 0:
+#     print("Division:", a / b)
+# else:
+#     print("Division by zero not allowed")
+
+# frequency_count.py
+arr = [1, 2, 2, 3, 3, 3, 4]
+
+freq = {}
+
+for num in arr:
+    if num in freq:
+        freq[num] += 1
+    else:
+        freq[num] = 1
+
+print("Frequency:", freq)
