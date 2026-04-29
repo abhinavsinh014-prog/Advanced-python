@@ -46,9 +46,9 @@ num = int(input("Enter number: "))
 if num > 1:
     for i in range(2, num):
         if num % i == 0:
-            print("Not Prime")
+            print("It's not a Prime")
             break
     else:
-        print("Prime Number")
+        print("It's a Prime Number")
 else:
     print("It's not a Prime")
