@@ -59,16 +59,12 @@ import random
 
 choices = ["rock", "paper", "scissors"]
 
-user = input("Enter rock/paper/scissors: ").lower()
-computer = random.choice(choices)
+def get_user_choice():
+    user = input("Enter rock/paper/scissors: ").lower()
 
-print("Computer:", computer)
+def get_computer_choice():
+    return random.choice(choices)
+def validate_user_choice(user):
 
-if user == computer:
-    print("Draw")
-elif (user == "rock" and computer == "scissors") or \
-     (user == "paper" and computer == "rock") or \
-     (user == "scissors" and computer == "paper"):
-    print("You Win")
-else:
-    print("You Lose")
+
+
