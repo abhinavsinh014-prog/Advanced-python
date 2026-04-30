@@ -61,7 +61,7 @@ import random
 choices = ["rock", "paper", "scissors"]
 
 def get_user_choice():
-    user = input("Enter rock/paper/scissors: ").lower()
+    return input("Enter rock/paper/scissors: ").lower()
 
 def get_computer_choice():
     computer = random.choice(choices)
@@ -76,3 +76,9 @@ def validate_user_choice(user, computer):
         return("You Win")
     else:
         return("You Lose")
+    
+
+get1 = get_user_choice()
+get2 = get_computer_choice()    
+result = validate_user_choice(get1, get2)
+print(f"You chose: {get1}, Computer chose: {get2}. \nResult: {result}")   
