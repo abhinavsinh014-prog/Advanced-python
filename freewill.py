@@ -59,3 +59,8 @@ import random
 
 choices = ["rock", "paper", "scissors"]
 
+user = input("Enter rock/paper/scissors: ").lower()
+computer = random.choice(choices)
+
+print("Computer:", computer)
+
