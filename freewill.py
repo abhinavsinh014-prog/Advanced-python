@@ -57,3 +57,5 @@
 # rock_paper_scissors.py
 import random
 
+choices = ["rock", "paper", "scissors"]
+
