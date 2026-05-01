@@ -46,8 +46,8 @@ sns.set_context("paper")
 # sns.countplot(data=penguins,x="species",hue='island',palette='Set1')
 # plt.show()
 
-# sns.boxplot(data=penguins,x="species",y="body_mass_g",hue='sex',palette='Set1')
-# plt.show()
+sns.boxplot(data=penguins,x="species",y="body_mass_g",hue='sex',palette='Set1')
+plt.show()
 
 sns.violinplot(data=penguins,x="species",y="flipper_length_mm",hue='sex',split = True)
 plt.show()
