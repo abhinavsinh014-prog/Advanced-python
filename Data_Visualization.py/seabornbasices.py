@@ -40,8 +40,8 @@ sns.set_context("paper")
 # sns.jointplot(data=penguins,x="body_mass_g",y='flipper_length_mm',hue='sex',kind='scatter')
 # plt.show()
 
-# sns.barplot(data=penguins,x="species",y='body_mass_g',hue='sex',palette=['pink','blue'],estimator=np.sum)
-# plt.show()
+sns.barplot(data=penguins,x="species",y='body_mass_g',hue='sex',palette=['pink','blue'],estimator=np.sum)
+plt.show()
 
 sns.countplot(data=penguins,x="species",hue='island',palette='Set1')
 plt.show()
