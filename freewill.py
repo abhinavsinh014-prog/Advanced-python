@@ -95,7 +95,7 @@ bank = {
 
 print("====== AURA FARMER BANK ATM ======")
 
-todo = input("Want to open new account or already have account (old/new/exit): ").lower().strip()
+command = input("Want to open new account or already have account (old/new/exit): ").lower().strip()
 
 
 def old_account():
@@ -165,13 +165,13 @@ def exit_account():
     print("Thanks for visiting!")
 
 
-if todo == "old":
+if command == "old":
     old_account()
 
-elif todo == "new":
+elif command == "new":
     new_account()
 
-elif todo == "exit":
+elif command == "exit":
     exit_account()
 
 else:
