@@ -157,10 +157,10 @@ while running :
                 
                 if deposit_money > 0:
                     bank[ac_name] = {"balance": deposit_money, "pin": pin}
-                    print("succesfully registered !")
+                    return "succesfully registered !"
                 
                 else:
-                    print("invalid deposit amount.")
+                    return "Invalid deposit amount."
         
     elif todo == "exit":
         print("Thanks for visitng")
