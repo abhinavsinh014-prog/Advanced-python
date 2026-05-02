@@ -135,33 +135,33 @@ while running :
                                 return "Invalid withdrawal amount or insufficient funds."
                         
                         elif action == "logout":
-                            print("Exiting the ATM simulation. Goodbye!")
+                            return "Exiting the ATM simulation. Goodbye!"
                             break
                         
                         else:
-                            print("Invalid action. Please try again!")
+                            return "Invalid action. Please try again!"
                 else:
-                    print("Incorrect PIN. Access denied.")
+                    return "Incorrect PIN. Access denied."
         else:
-            print("Invalid action. Please try again!")
-    
-    elif todo == "new":
-        ac_name = input("Enter your registered name :-").lower().strip()
-        
-        if ac_name in bank:
-            print("account already registered")
-        
-        else:
-            deposit_money = int(input("deposit money :-"))
-            pin =int(input("set your 4 digit pin :-"))
+            return "Invalid action. Please try again!"
+    def new_account():
+        if todo == "new":
+            ac_name = input("Enter your registered name :-").lower().strip()
             
-            if deposit_money > 0:
-                bank[ac_name] = {"balance": deposit_money, "pin": pin}
-                print("succesfully registered !")
+            if ac_name in bank:
+                print("account already registered")
             
             else:
-                print("invalid deposit amount.")
-    
+                deposit_money = int(input("deposit money :-"))
+                pin =int(input("set your 4 digit pin :-"))
+                
+                if deposit_money > 0:
+                    bank[ac_name] = {"balance": deposit_money, "pin": pin}
+                    print("succesfully registered !")
+                
+                else:
+                    print("invalid deposit amount.")
+        
     elif todo == "exit":
         print("Thanks for visitng")
         running = False
