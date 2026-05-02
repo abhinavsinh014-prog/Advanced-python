@@ -155,7 +155,7 @@ def new_account():
 
         if deposit_money > 0:
             bank[ac_name] = {"balance": deposit_money, "pin": pin}
-            print("Successfully registered!")
+            print("Successfully registered!!")
             print(f"Your new balance is: ₹{bank[ac_name]['balance']}")
         else:
             print("Invalid deposit amount.")
