@@ -110,7 +110,7 @@ def old_account():
             while True:
                 action = input("Choose action (check balance, deposit, withdraw, logout): ").lower().strip()
 
-                if action == "check balance":
+                if action == "check balance" or action == "balance":
                     print(f"Your current balance is: ₹{bank[person]['balance']}")
 
                 elif action == "deposit":
