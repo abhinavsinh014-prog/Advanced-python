@@ -76,3 +76,7 @@ def new_account():
             print("Invalid deposit amount.")
 
 
+def exit_account():
+    print("Thanks for visiting!")
+
+
