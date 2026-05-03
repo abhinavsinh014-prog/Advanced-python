@@ -59,3 +59,20 @@ def old_account():
         print("Account not found.")
 
 
+def new_account():
+    ac_name = input("Enter your registered name: ").lower().strip()
+
+    if ac_name in bank:
+        print("Account already registered.")
+    else:
+        deposit_money = int(input("Deposit money: "))
+        pin = int(input("Set your 4 digit PIN: "))
+
+        if deposit_money > 0:
+            bank[ac_name] = {"balance": deposit_money, "pin": pin}
+            print("Successfully registered!!")
+            print(f"Your new balance is: ₹{bank[ac_name]['balance']}")
+        else:
+            print("Invalid deposit amount.")
+
+
