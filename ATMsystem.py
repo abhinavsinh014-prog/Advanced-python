@@ -8,3 +8,8 @@ bank = {
     "mohit": {"balance": 28879, "pin": 4567}
 }
 
+print("====== AURA FARMER BANK ATM ======")
+
+command = input("Want to open new account or already have account (old/new/exit): ").lower().strip()
+
+
