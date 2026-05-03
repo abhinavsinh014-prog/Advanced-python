@@ -80,3 +80,14 @@ def exit_account():
     print("Thanks for visiting!")
 
 
+if command == "old":
+    old_account()
+
+elif command == "new":
+    new_account()
+
+elif command == "exit":
+    exit_account()
+
+else:
+    print("Invalid demand!")
