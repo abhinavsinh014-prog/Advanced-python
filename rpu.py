@@ -26,4 +26,6 @@ if __name__ == "__main__":
     print(f"Total cost: ${total_cost:.2f}")
     expired = check_expiry(quantity, expiry)
     print(f"Expired fruits: {expired}")
+
+
     
