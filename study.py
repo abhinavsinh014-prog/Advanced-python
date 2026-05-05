@@ -1,8 +1,5 @@
 study = {
-    "subject": "Mathematics",
-    "topics": ["Algebra", "Calculus", "Geometry"],
-    "exams": {
-        "midterm": "2024-10-15",
-        "final": "2024-12-20"
-    }
+    "subject": ["Mathematics", "Electrical", "Physics","PPS","EVS"],
+    "topics": [5,5,5,5,5],
+    "exams DATE": ["2024-07-01","2024-07-02","2024-07-03","2024-07-04","2024-07-05"]
 }
