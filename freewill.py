@@ -83,3 +83,6 @@
 # result = validate_user_choice(get1, get2)
 # print(f"You chose: {get1}, Computer chose: {get2}. \nResult: {result}")   
 
+a = 10
+b = 20  
+print("Before swapping: a =", a, "b =", b)
