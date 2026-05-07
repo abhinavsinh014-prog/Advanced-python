@@ -8,3 +8,6 @@ for i in range(n):
         if j == i :
             trance.append(matrix[i][j])
 print(trance)
+
+a = sum(trance)
+print(a)
